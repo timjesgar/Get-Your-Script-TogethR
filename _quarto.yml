@@ -7,12 +7,18 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: "Home"
-      - "about.qmd"
+        text: Home
+        
+      - text: Tutorials
+        href: tutorials/tutorial.qmd
+
       - text: How-Tos
         href: how-tos/how-tos.qmd
+
       - text: Reproducible Projects
         href: reproducible-projects/reproducible_projects.qmd
+
+      - "about.qmd"
 
   sidebar: 
     - title: How-Tos
@@ -20,6 +26,11 @@ website:
       contents: 
         - how-tos/how-tos.qmd
         - how-tos/how-to_functional-programming.qmd
+    
+    - title: Tutorials
+      style: docked
+      contents: 
+        - tutorials/tutorial.qmd
 
 format:
   html:
