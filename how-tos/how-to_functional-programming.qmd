@@ -1,0 +1,20 @@
+---
+title: "How-To: Functional Programming"
+author: "TLJ"
+---
+
+# Incentive
+
+# tl;dr
+
+```{r}
+#| eval: false
+your_list |>
+  set_names() |>
+  map(\(list_entry) {
+    # your code
+  })
+
+```
+
+# In detail

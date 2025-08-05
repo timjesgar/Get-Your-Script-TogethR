@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Get Your Script TogethR!"
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Home"
+      - "about.qmd"
+      - text: How-Tos
+        href: how-tos/how-tos.qmd
+      - text: Reproducible Projects
+        href: reproducible-projects/reproducible_projects.qmd
+
+  sidebar: 
+    - title: How-Tos
+      style: docked
+      contents: 
+        - how-tos/how-tos.qmd
+        - how-tos/how-to_functional-programming.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+

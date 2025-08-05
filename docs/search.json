@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "reproducible-projects/reproducible_projects.html",
+    "href": "reproducible-projects/reproducible_projects.html",
+    "title": "Reproducible R Projects",
+    "section": "",
+    "text": "Incentive\n\n\ntl;dr\n\n\nIn detail"
+  },
+  {
+    "objectID": "how-tos/how-to_functional-programming.html",
+    "href": "how-tos/how-to_functional-programming.html",
+    "title": "How-To: Functional Programming",
+    "section": "",
+    "text": "Incentive\n\n\ntl;dr\n\nyour_list |&gt;\n  set_names() |&gt;\n  map(\\(list_entry) {\n    # your code\n  })\n\n\n\nIn detail",
+    "crumbs": [
+      "How-Tos",
+      "How-To: Functional Programming"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "how-tos/how-tos.html",
+    "href": "how-tos/how-tos.html",
+    "title": "How-Tos",
+    "section": "",
+    "text": "Manche Programmierprobleme tauchen immer wieder in der Aufbereitung und Auswertung von wissenschaftlichen Daten auf, benötigen aber teilweise so spezifisches Wissen, dass man sich jedes Mal aus neue dazu einlesen muss. Damit die nächste Pattern Extraction aus Strings oder parallele Berechnung von mehreren Modellen smoother verläuft, gibt es hier eine Sammlung aus nützlichen How-Tos zu Programmierproblemen denen wir immer wieder begegnen.",
+    "crumbs": [
+      "How-Tos"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "klipsy_methods-website",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]

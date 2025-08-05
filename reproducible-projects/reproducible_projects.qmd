@@ -1,0 +1,10 @@
+---
+title: "Reproducible R Projects"
+---
+
+# Incentive
+
+# tl;dr
+
+# In detail
+

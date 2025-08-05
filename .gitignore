@@ -1,0 +1,10 @@
+# R
+.Rhistory
+.Rdata
+.Rproj.user/
+
+# Quarto
+.quarto/
+_freeze/
+
+/.quarto/
