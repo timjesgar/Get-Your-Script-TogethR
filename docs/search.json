@@ -1,10 +1,27 @@
 [
   {
-    "objectID": "reproducible-projects/reproducible_projects.html",
-    "href": "reproducible-projects/reproducible_projects.html",
-    "title": "Reproducible R Projects",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Get Your Script TogethR!",
     "section": "",
-    "text": "Incentive\n\n\ntl;dr\n\n\nIn detail"
+    "text": "Sammlung an Tutorials und How-Tos um die Irrungen und Wirrungen der Aufbereitung und Auswertung psych. wissenschaftlicher Daten zu meistern."
+  },
+  {
+    "objectID": "how-tos/how-tos.html",
+    "href": "how-tos/how-tos.html",
+    "title": "How-Tos",
+    "section": "",
+    "text": "Manche Programmierprobleme tauchen immer wieder in der Aufbereitung und Auswertung von wissenschaftlichen Daten auf, benötigen aber teilweise so spezifisches Wissen, dass man sich jedes Mal aus neue dazu einlesen muss. Damit die nächste Pattern Extraction aus Strings oder parallele Berechnung von mehreren Modellen smoother verläuft, gibt es hier eine Sammlung aus nützlichen How-Tos zu Programmierproblemen denen wir immer wieder begegnen.",
+    "crumbs": [
+      "How-Tos"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   },
   {
     "objectID": "how-tos/how-to_functional-programming.html",
@@ -18,27 +35,10 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "reproducible-projects/reproducible_projects.html",
+    "href": "reproducible-projects/reproducible_projects.html",
+    "title": "Reproducible R Projects",
     "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "how-tos/how-tos.html",
-    "href": "how-tos/how-tos.html",
-    "title": "How-Tos",
-    "section": "",
-    "text": "Manche Programmierprobleme tauchen immer wieder in der Aufbereitung und Auswertung von wissenschaftlichen Daten auf, benötigen aber teilweise so spezifisches Wissen, dass man sich jedes Mal aus neue dazu einlesen muss. Damit die nächste Pattern Extraction aus Strings oder parallele Berechnung von mehreren Modellen smoother verläuft, gibt es hier eine Sammlung aus nützlichen How-Tos zu Programmierproblemen denen wir immer wieder begegnen.",
-    "crumbs": [
-      "How-Tos"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Get Your Script TogethR!",
-    "section": "",
-    "text": "Sammlung an Tutorials und How-Tos um die Irrungen und Wirrungen der Aufbereitung und Auswertung psych. wissenschaftlicher Daten zu meistern."
+    "text": "Incentive\n\n\ntl;dr\n\n\nIn detail"
   }
 ]
