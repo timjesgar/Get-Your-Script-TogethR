@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE" xml:lang="de-DE"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="TLJ">
 
-<title>Reproducible R Projects – Get Your Script TogethR!</title>
+<title>Reproduzierbare Analyseprojekte mit R – Get Your Script TogethR!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-bce83624dd429190d13db9bf62533269.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -54,17 +55,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 
@@ -83,8 +84,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Get Your Script TogethR!</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -122,12 +123,19 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#incentive" id="toc-incentive" class="nav-link active" data-scroll-target="#incentive">Incentive</a></li>
+  <li><a href="#wieso-reproduzierbare-r-projekte" id="toc-wieso-reproduzierbare-r-projekte" class="nav-link active" data-scroll-target="#wieso-reproduzierbare-r-projekte">Wieso Reproduzierbare R-Projekte?</a></li>
   <li><a href="#tldr" id="toc-tldr" class="nav-link" data-scroll-target="#tldr">tl;dr</a></li>
-  <li><a href="#in-detail" id="toc-in-detail" class="nav-link" data-scroll-target="#in-detail">In detail</a></li>
+  <li><a href="#im-detail" id="toc-im-detail" class="nav-link" data-scroll-target="#im-detail">Im Detail</a>
+  <ul class="collapse">
+  <li><a href="#struktur-eines-analyseprojekts" id="toc-struktur-eines-analyseprojekts" class="nav-link" data-scroll-target="#struktur-eines-analyseprojekts">Struktur eines Analyseprojekts</a>
+  <ul class="collapse">
+  <li><a href="#erstellen-des-projektordners" id="toc-erstellen-des-projektordners" class="nav-link" data-scroll-target="#erstellen-des-projektordners">Erstellen des Projektordners</a></li>
+  <li><a href="#erstelle-die-unterordner-struktur" id="toc-erstelle-die-unterordner-struktur" class="nav-link" data-scroll-target="#erstelle-die-unterordner-struktur">Erstelle die Unterordner-Struktur</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -136,13 +144,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reproducible R Projects</h1>
+<h1 class="title">Reproduzierbare Analyseprojekte mit R</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autor:in</div>
+    <div class="quarto-title-meta-contents">
+             <p>TLJ </p>
+          </div>
+  </div>
     
   
     
@@ -153,16 +167,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="incentive" class="level1">
-<h1>Incentive</h1>
+<section id="wieso-reproduzierbare-r-projekte" class="level1">
+<h1>Wieso Reproduzierbare R-Projekte?</h1>
+<p>Ein Ziel von Open Science ist die Reproduzierbarkeit von Studienergebnissen auf Basis der Originaldaten. Um dies zu gewährleisten, ist es hilfreich, neben den Originaldaten auch die genutzten Code-Skripte im “Plug-and-Play”-Format aufzubereiten und zu veröffentlichen. “Plug-and-Play” bezieht sich hierbei darauf, dass eine andere Person durch das einfache durchlaufen lassen der Skripte zu dem selben Ergebnis kommt, die auch berichtet wurden.</p>
+<p>Was zunächst simpel klingt, ist in der Anwendung meist komplexer als man denkt: Skripte entwickeln sich über den Lauf eines Projektes organisch zu Ungetümen, bei denen selbst die verfassende Person nicht mehr durchblickt. Wichtige Dateipfade werden hard-coded, sodass das Skript nicht mehr funktioniert, wenn es verschoben wird. Oder, ein R-Paket wird auf eine Art aktualisiert, dass der gestern noch funktionierende Code nur noch Fehler wirft. Auch wenn nicht jede Eventualität vorhergesehen werden kann, so kann man doch Schritte gehen, um solche Probleme möglichst minimal zu halten. Einige diese Schritte, von vorausschauendem Kommentieren, über adaptive relative Pfaden, zu reproduzierbaren R-Umgebungen, sollen hier vorgestellt werden um einen Einblick zu geben, wie man mit überschaubarem Aufwand die eigenen Analysen reproduzierbarer machen kann.</p>
 </section>
 <section id="tldr" class="level1">
 <h1>tl;dr</h1>
+<p>Schritte zu einem reproduzierbareren Analyseprojekt:</p>
+<ul>
+<li>Erstelle für jedes Analyseprojekt einen <strong>Projektordner mit verständlicher Unterordnerstruktur</strong>.</li>
+<li><strong>Nutze eine reproduzierbare R-Umgebung mittels <code>renv::</code></strong>, damit Updates externer R-Pakete nicht deinen Code kaputt machen.</li>
+<li><strong>Nutze relative Pfade mittels <code>here::</code></strong>, um dein Projekt portabel zu machen.</li>
+<li><strong>Ordne deine Code-Skripte nachvollziehbar</strong>: Setup (Pakete laden, globale Variablen definieren) -&gt; Daten laden -&gt; Datentransformationen -&gt; Auswertung</li>
+<li><strong>Sei konsistent in deiner Benennung von Objekten und Variablen</strong> (z.B. <code>snake_case</code> oder <code>CamelCase</code>, jedoch nicht <code>Wasauchimmerdashierist</code>).</li>
+<li><strong>Nutze Code-Kommentare, um den Sinn hinter deinem Vorgehen zu erklären</strong>, nicht die Funktionsweise von etablierten Funktionen.</li>
+<li><strong>Behandle deinen Code als “First-class Citizen”</strong>: Originaldaten + Auswertungscode &gt; Aufbereitete Daten, von denen man nicht weiß, wie sie zustande kamen.</li>
+</ul>
 </section>
-<section id="in-detail" class="level1">
-<h1>In detail</h1>
+<section id="im-detail" class="level1">
+<h1>Im Detail</h1>
+<section id="struktur-eines-analyseprojekts" class="level2">
+<h2 class="anchored" data-anchor-id="struktur-eines-analyseprojekts">Struktur eines Analyseprojekts</h2>
+<p>Zuallererst ist es hilfreich, für jedes Analyseprojekt einen dedizierten Ordner zu haben, anstatt einen Riesenordner mit diversen Skripten von verschiedenen Projekten zu kultivieren. Dieses partialisierte Vorgehen hat einige Vorteile:</p>
+<ul>
+<li><strong>Übersichtlichkeit</strong>: Du suchst nach einem Projekt, welches du vor Jahren abgeschlossen hast? Ein Ordner <em>202X_projekt-name</em> ist schnell gefunden.</li>
+<li><strong>Erwartbarkeit</strong>: Idealerweise ist der Aufbau jedes Projekts, also welche Unterordner es gibt und wo relevante Dateien liegen, identisch. Das macht es einfach, sich in Projekte reinzudenken, die man lange nicht mehr geöffnet hat.</li>
+<li><strong>Zuordbarkeit relevanter Dateien</strong>: Du nennst für jede Analyse den Originaldatensatz gleich? Das kann schnell zum Problem werden, wenn du nicht mehr weißt, ob <em>raw_data1.csv</em> oder <em>raw_data2.csv</em> der richtige Datensatz für dein aktuelles Projekt ist. Ein Projektordner löst das Problem, da nur die zugehörigen Dateien in den jeweiligen Ordnern gespeichert werden.</li>
+<li><strong>Portabilität</strong>: Du willst deine Analysen mit jemand anderem teilen? Kein Problem! Teile einfach den gesamten Projektordner!</li>
+</ul>
+<p>Du siehst, so ein Analyseprojekt kann einiges leichter machen. Damit du vollumfänglich von diesen Vorteilen profitieren kannst, müssen wir allerdings beim Setup des Projekts einige Dinge beachten. Fangen wir erstmal mit der Ordnerstruktur selbst an:</p>
+<section id="erstellen-des-projektordners" class="level3">
+<h3 class="anchored" data-anchor-id="erstellen-des-projektordners">Erstellen des Projektordners</h3>
+<p>Das einfachste Vorgehen ist, einen Ordner manuell zu erstellen und mit einem deskriptiven Name zu versehen (z.B. <em>2025_projekt-projektname</em>). Wenn du aber, wie wahrscheinlich die meisten, deine R-Analysen mittels einer IDE (Integrated Development Environment) wie <a href="https://posit.co/products/open-source/rstudio/?sid=1">RStudio</a> oder <a href="https://positron.posit.co/">Positron</a> durchführst, ist es sinnvoll, das Projektsetup der jeweiligen IDE zu überlassen. Dadurch werden dir einige Setup-Schritte abgenommen und du kannst dir sicher sein, dass deine IDE deinen Projektordner auch als Projekt erkennt.</p>
+<p>Hier also das Vorgehen für zwei der bekanntesten IDEs für das arbeiten mit R:</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Projekt-Setup mit RStudio
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>TODO</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Projekt-Setup mit Positron
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>TODO</p>
+</div>
+</div>
+</div>
+</section>
+<section id="erstelle-die-unterordner-struktur" class="level3">
+<h3 class="anchored" data-anchor-id="erstelle-die-unterordner-struktur">Erstelle die Unterordner-Struktur</h3>
+<p>TODO</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -191,12 +269,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Kopiert");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Kopiert");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
