@@ -18,7 +18,8 @@ website:
       - text: Reproducible Projects
         href: reproducible-projects/reproducible_projects.qmd
 
-      - "about.qmd"
+      - text: About
+        href: about.qmd
 
   sidebar: 
     - title: How-Tos
@@ -39,6 +40,6 @@ format:
       - brand
     css: styles.css
     toc: true
-
+    lang: de-DE
 
 
