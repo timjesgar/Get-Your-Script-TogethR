@@ -23,21 +23,20 @@ website:
 
   sidebar: 
     - title: How-Tos
-      style: docked
+      style: floating
       contents: 
         - how-tos/how-tos.qmd
         - how-tos/how-to_functional-programming.qmd
     
     - title: Tutorials
-      style: docked
+      style: floating
       contents: 
         - tutorials/tutorial.qmd
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: 
+      light: custom.scss
     css: styles.css
     toc: true
     lang: de-DE
