@@ -7,18 +7,18 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: HOME
         
-      - text: Tutorials
+      - text: TUTORIALS
         href: tutorials/fuer-einsteigr.qmd
 
-      - text: How-Tos
+      - text: HOW-TOS
         href: how-tos/how-tos.qmd
 
-      - text: Reproducible Projects
+      - text: REPRODUCIBLE PROJECTS
         href: reproducible-projects/reproducible_projects.qmd
 
-      - text: About
+      - text: ABOUT
         href: about.qmd
 
   sidebar: 

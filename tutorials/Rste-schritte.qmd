@@ -21,7 +21,7 @@ TO DO
 
 Standardmäßig ist das Theme von *RStudio* hell. Wenn dir das zu langweilig ist, kannst du das Programm ganz einfach an deinen Geschmack anpassen: Unter Tools > Global Options > Appearance hast du die Möglichkeit, ein anderes Farbschema oder eine neue Schriftart auszuwählen.
 
-Für besonders ansprechende Symbole – etwa den Zuweisungspfeil "<-" empfiehlt sich die Schriftart Fira Code. Sie sorgt für eine übersichtlichere Darstellung und unterstützt sogenannte Ligaturen. Dafür ist eine [vorherige Installation](https://fonts.google.com/specimen/Fira+Code) notwendig. 
+Für besonders ansprechende Symbole -- etwa den Zuweisungspfeil "<-" -- empfiehlt sich die Schriftart Fira Code. Sie sorgt für eine übersichtlichere Darstellung und unterstützt sogenannte Ligaturen. Dafür ist eine [vorherige Installation](https://fonts.google.com/specimen/Fira+Code) notwendig. 
 :::
 
 
