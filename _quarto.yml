@@ -35,9 +35,10 @@ website:
 
 format:
   html:
-    theme: 
-      light: custom.scss
-    css: styles.css
+    theme:
+      - lux
+      - custom.scss
+
     toc: true
     lang: de-DE
 
