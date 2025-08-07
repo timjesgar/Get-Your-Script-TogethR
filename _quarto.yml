@@ -10,7 +10,7 @@ website:
         text: Home
         
       - text: Tutorials
-        href: tutorials/tutorial.qmd
+        href: tutorials/fuer-einsteigr.qmd
 
       - text: How-Tos
         href: how-tos/how-tos.qmd
@@ -31,7 +31,8 @@ website:
     - title: Tutorials
       style: floating
       contents: 
-        - tutorials/tutorial.qmd
+        - tutorials/fuer-einsteigr.qmd
+        - tutorials/Rste-schritte.qmd
 
 format:
   html:
@@ -41,5 +42,7 @@ format:
 
     toc: true
     lang: de-DE
+    link-external-icon: true
+    link-external-newwindow: true
 
 

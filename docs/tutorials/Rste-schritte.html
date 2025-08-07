@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="TLJ">
+<meta name="author" content="VN">
 
-<title>Reproduzierbare Analyseprojekte mit R – Get Your Script TogethR!</title>
+<title>Rste Schritte – Get Your Script TogethR!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../tutorials/fuer-einsteigr.html"> 
+    <a class="nav-link active" href="../tutorials/fuer-einsteigr.html" aria-current="page"> 
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">How-Tos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../reproducible-projects/reproducible_projects.html" aria-current="page"> 
+    <a class="nav-link" href="../reproducible-projects/reproducible_projects.html"> 
 <span class="menu-text">Reproducible Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -115,26 +115,46 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/Rste-schritte.html">Rste Schritte</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutorials/fuer-einsteigr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Für EinsteigR</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutorials/Rste-schritte.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Rste Schritte</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#wieso-reproduzierbare-r-projekte" id="toc-wieso-reproduzierbare-r-projekte" class="nav-link active" data-scroll-target="#wieso-reproduzierbare-r-projekte">Wieso Reproduzierbare R-Projekte?</a></li>
-  <li><a href="#tldr" id="toc-tldr" class="nav-link" data-scroll-target="#tldr">tl;dr</a></li>
-  <li><a href="#im-detail" id="toc-im-detail" class="nav-link" data-scroll-target="#im-detail">Im Detail</a>
-  <ul class="collapse">
-  <li><a href="#struktur-eines-analyseprojekts" id="toc-struktur-eines-analyseprojekts" class="nav-link" data-scroll-target="#struktur-eines-analyseprojekts">Struktur eines Analyseprojekts</a>
-  <ul class="collapse">
-  <li><a href="#erstellen-des-projektordners" id="toc-erstellen-des-projektordners" class="nav-link" data-scroll-target="#erstellen-des-projektordners">Erstellen des Projektordners</a></li>
-  <li><a href="#erstelle-die-unterordner-struktur" id="toc-erstelle-die-unterordner-struktur" class="nav-link" data-scroll-target="#erstelle-die-unterordner-struktur">Erstelle die Unterordner-Struktur</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#rstudio-interface" id="toc-rstudio-interface" class="nav-link active" data-scroll-target="#rstudio-interface"><em>RStudio</em> Interface</a></li>
   </ul>
 </nav>
     </div>
@@ -143,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reproduzierbare Analyseprojekte mit R</h1>
+<h1 class="title">Rste Schritte</h1>
 </div>
 
 
@@ -153,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Autor:in</div>
     <div class="quarto-title-meta-contents">
-             <p>TLJ </p>
+             <p>VN </p>
           </div>
   </div>
     
@@ -166,80 +186,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="wieso-reproduzierbare-r-projekte" class="level1">
-<h1>Wieso Reproduzierbare R-Projekte?</h1>
-<p>Ein Ziel von Open Science ist die Reproduzierbarkeit von Studienergebnissen auf Basis der Originaldaten. Um dies zu gewährleisten, ist es hilfreich, neben den Originaldaten auch die genutzten Code-Skripte im “Plug-and-Play”-Format aufzubereiten und zu veröffentlichen. “Plug-and-Play” bezieht sich hierbei darauf, dass eine andere Person durch das einfache durchlaufen lassen der Skripte zu dem selben Ergebnis kommt, die auch berichtet wurden.</p>
-<p>Was zunächst simpel klingt, ist in der Anwendung meist komplexer als man denkt: Skripte entwickeln sich über den Lauf eines Projektes organisch zu Ungetümen, bei denen selbst die verfassende Person nicht mehr durchblickt. Wichtige Dateipfade werden hard-coded, sodass das Skript nicht mehr funktioniert, wenn es verschoben wird. Oder, ein R-Paket wird auf eine Art aktualisiert, dass der gestern noch funktionierende Code nur noch Fehler wirft. Auch wenn nicht jede Eventualität vorhergesehen werden kann, so kann man doch Schritte gehen, um solche Probleme möglichst minimal zu halten. Einige diese Schritte, von vorausschauendem Kommentieren, über adaptive relative Pfaden, zu reproduzierbaren R-Umgebungen, sollen hier vorgestellt werden um einen Einblick zu geben, wie man mit überschaubarem Aufwand die eigenen Analysen reproduzierbarer machen kann.</p>
-</section>
-<section id="tldr" class="level1">
-<h1>tl;dr</h1>
-<p>Schritte zu einem reproduzierbareren Analyseprojekt:</p>
-<ul>
-<li>Erstelle für jedes Analyseprojekt einen <strong>Projektordner mit verständlicher Unterordnerstruktur</strong>.</li>
-<li><strong>Nutze eine reproduzierbare R-Umgebung mittels <code>renv::</code></strong>, damit Updates externer R-Pakete nicht deinen Code kaputt machen.</li>
-<li><strong>Nutze relative Pfade mittels <code>here::</code></strong>, um dein Projekt portabel zu machen.</li>
-<li><strong>Ordne deine Code-Skripte nachvollziehbar</strong>: Setup (Pakete laden, globale Variablen definieren) -&gt; Daten laden -&gt; Datentransformationen -&gt; Auswertung</li>
-<li><strong>Sei konsistent in deiner Benennung von Objekten und Variablen</strong> (z.B. <code>snake_case</code> oder <code>CamelCase</code>, jedoch nicht <code>Wasauchimmerdashierist</code>).</li>
-<li><strong>Nutze Code-Kommentare, um den Sinn hinter deinem Vorgehen zu erklären</strong>, nicht die Funktionsweise von etablierten Funktionen.</li>
-<li><strong>Behandle deinen Code als “First-class Citizen”</strong>: Originaldaten + Auswertungscode &gt; Aufbereitete Daten, von denen man nicht weiß, wie sie zustande kamen.</li>
-</ul>
-</section>
-<section id="im-detail" class="level1">
-<h1>Im Detail</h1>
-<section id="struktur-eines-analyseprojekts" class="level2">
-<h2 class="anchored" data-anchor-id="struktur-eines-analyseprojekts">Struktur eines Analyseprojekts</h2>
-<p>Zuallererst ist es hilfreich, für jedes Analyseprojekt einen dedizierten Ordner zu haben, anstatt einen Riesenordner mit diversen Skripten von verschiedenen Projekten zu kultivieren. Dieses partialisierte Vorgehen hat einige Vorteile:</p>
-<ul>
-<li><strong>Übersichtlichkeit</strong>: Du suchst nach einem Projekt, welches du vor Jahren abgeschlossen hast? Ein Ordner <em>202X_projekt-name</em> ist schnell gefunden.</li>
-<li><strong>Erwartbarkeit</strong>: Idealerweise ist der Aufbau jedes Projekts, also welche Unterordner es gibt und wo relevante Dateien liegen, identisch. Das macht es einfach, sich in Projekte reinzudenken, die man lange nicht mehr geöffnet hat.</li>
-<li><strong>Zuordbarkeit relevanter Dateien</strong>: Du nennst für jede Analyse den Originaldatensatz gleich? Das kann schnell zum Problem werden, wenn du nicht mehr weißt, ob <em>raw_data1.csv</em> oder <em>raw_data2.csv</em> der richtige Datensatz für dein aktuelles Projekt ist. Ein Projektordner löst das Problem, da nur die zugehörigen Dateien in den jeweiligen Ordnern gespeichert werden.</li>
-<li><strong>Portabilität</strong>: Du willst deine Analysen mit jemand anderem teilen? Kein Problem! Teile einfach den gesamten Projektordner!</li>
-</ul>
-<p>Du siehst, so ein Analyseprojekt kann einiges leichter machen. Damit du vollumfänglich von diesen Vorteilen profitieren kannst, müssen wir allerdings beim Setup des Projekts einige Dinge beachten. Fangen wir erstmal mit der Ordnerstruktur selbst an:</p>
-<section id="erstellen-des-projektordners" class="level3">
-<h3 class="anchored" data-anchor-id="erstellen-des-projektordners">Erstellen des Projektordners</h3>
-<p>Das einfachste Vorgehen ist, einen Ordner manuell zu erstellen und mit einem deskriptiven Name zu versehen (z.B. <em>2025_projekt-projektname</em>). Wenn du aber, wie wahrscheinlich die meisten, deine R-Analysen mittels einer IDE (Integrated Development Environment) wie <a href="https://posit.co/products/open-source/rstudio/?sid=1">RStudio</a> oder <a href="https://positron.posit.co/">Positron</a> durchführst, ist es sinnvoll, das Projektsetup der jeweiligen IDE zu überlassen. Dadurch werden dir einige Setup-Schritte abgenommen und du kannst dir sicher sein, dass deine IDE deinen Projektordner auch als Projekt erkennt.</p>
-<p>Hier also das Vorgehen für zwei der bekanntesten IDEs für das arbeiten mit R:</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<p>Für die Aufbereitung und Analyse deiner Daten empfehlen wir <em>R</em> – eine Programmiersprache die in der Wissenschaft weit verbreitet ist. Um den Umgang mit R zu vereinfachen, nutzen wir <em>RStudio</em>. Dabei handelt es sich um eine integrierte Entwicklungsumgebung (IDE), also sozusagen ein All-in-one-Programm für alle, die mit <em>R</em> arbeiten: Du kannst hier Code schreiben, ausführen, deine Daten anschauen und direkt schöne Plots erzeugen – ohne ständig zwischen Programmen zu wechseln.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Projekt-Setup mit RStudio
+Installation
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>TODO</p>
+<p>Installiere zuerst <em>R</em>, dann <em>RStudio</em> auf deinem Computer. Die Dateien kannst du kostenlos <a href="https://posit.co/download/rstudio-desktop/">hier herunterladen</a>.</p>
 </div>
 </div>
-</div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<section id="rstudio-interface" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-interface"><em>RStudio</em> Interface</h3>
+<p><img src="../resources/RStudio-screenshot.png" width="750"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Projekt-Setup mit Positron
+Layoutoptionen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>TODO</p>
+<p>Standardmäßig ist das Theme von <em>RStudio</em> hell. Wenn dir das zu langweilig ist, kannst du das Programm ganz einfach an deinen Geschmack anpassen: Unter Tools &gt; Global Options &gt; Appearance hast du die Möglichkeit, ein anderes Farbschema oder eine neue Schriftart auszuwählen.</p>
+<p>Für besonders ansprechende Symbole – etwa den Zuweisungspfeil “&lt;-” empfiehlt sich die Schriftart Fira Code. Sie sorgt für eine übersichtlichere Darstellung und unterstützt sogenannte Ligaturen. Dafür ist eine <a href="https://fonts.google.com/specimen/Fira+Code">vorherige Installation</a> notwendig.</p>
 </div>
 </div>
 </div>
-</section>
-<section id="erstelle-die-unterordner-struktur" class="level3">
-<h3 class="anchored" data-anchor-id="erstelle-die-unterordner-struktur">Erstelle die Unterordner-Struktur</h3>
-<p>TODO</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
