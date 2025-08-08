@@ -14,14 +14,47 @@ Installiere zuerst *R*, dann *RStudio* auf deinem Computer. Die Dateien kannst d
 
 <img src="../resources/RStudio-screenshot.png" width="750"/>
 
-TO DO
+Standardmäßig ist *RStudio* in **vier Bereiche** (auch "Panes") aufgeteilt:
+
+1. **Source (oben links)**
+    * Hier schreibst und bearbeitest du deine Skripte oder Quarto-/RMarkdown-Dokumente. Du kannst deinen Code hier speichern und später erneut ausführen.
+
+2. **Console (unten links)**
+    * In diesem Bereich wird der Code tatsächlich ausgeführt. Du kannst hier auch direkt Befehle eingeben und die Ergebnisse sofort sehen.
+
+3. **Environment / History (oben rechts)**
+    * Environment zeigt dir alle Objekte (z. B. Daten, Funktionen, Variablen), die aktuell im Arbeitsspeicher liegen.
+    * History listet alle bisherigen Befehle auf, die du ausgeführt hast.
+
+4. **Files / Plots / Packages / Help / Viewer (unten rechts)**
+    * Dieser Bereich enthält mehrere Reiter:
+        + Files: zeigt Dateien und Ordner im aktuellen Projektordner.
+        + Plots: zeigt Grafiken, die du mit R erzeugst.
+        + Packages: zeigt installierte R-Pakete an und ermöglicht deren Verwaltung.
+        + Help: zeigt Hilfeseiten zu Funktionen und Paketen.
+        + Viewer: zeigt z. B. interaktive HTML-Outputs aus Quarto an.
+
+Du kannst die Anordnung der Fenster bei Bedarf unter Tools > Global Options > Pane Layout anpassen.
 
 ::: {.callout-tip collapse="true"}
-## Layoutoptionen
+## Designoptionen
 
 Standardmäßig ist das Theme von *RStudio* hell. Wenn dir das zu langweilig ist, kannst du das Programm ganz einfach an deinen Geschmack anpassen: Unter Tools > Global Options > Appearance hast du die Möglichkeit, ein anderes Farbschema oder eine neue Schriftart auszuwählen.
 
 Für besonders ansprechende Symbole -- etwa den Zuweisungspfeil "<-" -- empfiehlt sich die Schriftart Fira Code. Sie sorgt für eine übersichtlichere Darstellung und unterstützt sogenannte Ligaturen. Dafür ist eine [vorherige Installation](https://fonts.google.com/specimen/Fira+Code) notwendig. 
 :::
 
+### Skripte und Befehle 
 
+Code kannst du zwar auch direkt in der Konsole schreiben und ausführen, allerdings wird dieser dort nicht nach der Sitzung erhalten. Um dein Vorgehen für dich und andere replizierbar zu machen, empfiehlt es sich mit Skripten zu arbeiten. Bei einem Skript handelt es sich um eine Datei, in der du Code schreiben und diesen direkt ausführen kannst. Um ein neues Skript zu erstellen, wähle im Menü File > New File > R Script oder klicke alternativ auf das Blatt mit dem Plussymbol links oben und wähle dort "R Script" aus. 
+
+Das leere Skript kannst du jetzt mit deinem Code füllen. Probier es doch gleich mal aus und schreibe eine einfache Rechnung in dein Skript: 
+
+```{r}
+#| eval: false 
+1 + 1
+```
+
+Den Code kannst du jetzt direkt ausführen, indem du in die zugehörige Zeile klickst und {{< kbd Strg+Enter >}} drückst. Der ausgeführte Code und das Ergebnis erscheinen dann unten in der Konsole. Du kannst auch mehrere Befehle ausführen, indem du die Codezeilen markierst und dann Strg + Enter drückst. Du hast außerdem die Möglichkeit, oben rechts im Source-Pane mit einem Mausklick den markierten Code auszuführen. 
+
+Pro Tipp: STRg+Shift+Enter für das gesamte Skript 

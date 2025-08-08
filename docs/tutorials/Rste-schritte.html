@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -40,7 +75,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f38fa0fce7d2da3c072c665a198ad196.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-be78eb90313e59509800a477e4003e5e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/kbd/kbd.js"></script>
+<link href="../site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -155,6 +192,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#rstudio-interface" id="toc-rstudio-interface" class="nav-link active" data-scroll-target="#rstudio-interface"><em>RStudio</em> Interface</a></li>
+  <li><a href="#skripte-und-befehle" id="toc-skripte-und-befehle" class="nav-link" data-scroll-target="#skripte-und-befehle">Skripte und Befehle</a></li>
   </ul>
 </nav>
     </div>
@@ -203,14 +241,41 @@ Installation
 <section id="rstudio-interface" class="level3">
 <h3 class="anchored" data-anchor-id="rstudio-interface"><em>RStudio</em> Interface</h3>
 <p><img src="../resources/RStudio-screenshot.png" width="750"></p>
-<p>TO DO</p>
+<p>Standardmäßig ist <em>RStudio</em> in <strong>vier Bereiche</strong> (auch “Panes”) aufgeteilt:</p>
+<ol type="1">
+<li><strong>Source (oben links)</strong>
+<ul>
+<li>Hier schreibst und bearbeitest du deine Skripte oder Quarto-/RMarkdown-Dokumente. Du kannst deinen Code hier speichern und später erneut ausführen.</li>
+</ul></li>
+<li><strong>Console (unten links)</strong>
+<ul>
+<li>In diesem Bereich wird der Code tatsächlich ausgeführt. Du kannst hier auch direkt Befehle eingeben und die Ergebnisse sofort sehen.</li>
+</ul></li>
+<li><strong>Environment / History (oben rechts)</strong>
+<ul>
+<li>Environment zeigt dir alle Objekte (z. B. Daten, Funktionen, Variablen), die aktuell im Arbeitsspeicher liegen.</li>
+<li>History listet alle bisherigen Befehle auf, die du ausgeführt hast.</li>
+</ul></li>
+<li><strong>Files / Plots / Packages / Help / Viewer (unten rechts)</strong>
+<ul>
+<li>Dieser Bereich enthält mehrere Reiter:
+<ul>
+<li>Files: zeigt Dateien und Ordner im aktuellen Projektordner.</li>
+<li>Plots: zeigt Grafiken, die du mit R erzeugst.</li>
+<li>Packages: zeigt installierte R-Pakete an und ermöglicht deren Verwaltung.</li>
+<li>Help: zeigt Hilfeseiten zu Funktionen und Paketen.</li>
+<li>Viewer: zeigt z. B. interaktive HTML-Outputs aus Quarto an.</li>
+</ul></li>
+</ul></li>
+</ol>
+<p>Du kannst die Anordnung der Fenster bei Bedarf unter Tools &gt; Global Options &gt; Pane Layout anpassen.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Layoutoptionen
+Designoptionen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -221,6 +286,16 @@ Layoutoptionen
 </div>
 </div>
 </div>
+</section>
+<section id="skripte-und-befehle" class="level3">
+<h3 class="anchored" data-anchor-id="skripte-und-befehle">Skripte und Befehle</h3>
+<p>Code kannst du zwar auch direkt in der Konsole schreiben und ausführen, allerdings wird dieser dort nicht nach der Sitzung erhalten. Um dein Vorgehen für dich und andere replizierbar zu machen, empfiehlt es sich mit Skripten zu arbeiten. Bei einem Skript handelt es sich um eine Datei, in der du Code schreiben und diesen direkt ausführen kannst. Um ein neues Skript zu erstellen, wähle im Menü File &gt; New File &gt; R Script oder klicke alternativ auf das Blatt mit dem Plussymbol links oben und wähle dort “R Script” aus.</p>
+<p>Das leere Skript kannst du jetzt mit deinem Code füllen. Probier es doch gleich mal aus und schreibe eine einfache Rechnung in dein Skript:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Den Code kannst du jetzt direkt ausführen, indem du in die zugehörige Zeile klickst und <kbd aria-hidden="true">Strg+Enter</kbd><span class="visually-hidden">Strg+Enter</span> drückst. Der ausgeführte Code und das Ergebnis erscheinen dann unten in der Konsole. Du kannst auch mehrere Befehle ausführen, indem du die Codezeilen markierst und dann Strg + Enter drückst. Du hast außerdem die Möglichkeit, oben rechts im Source-Pane mit einem Mausklick den markierten Code auszuführen.</p>
+<p>Pro Tipp: STRg+Shift+Enter für das gesamte Skript</p>
 
 
 </section>

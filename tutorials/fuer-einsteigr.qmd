@@ -17,3 +17,4 @@ Was dich erwartet:
 -   *R Basics* – Was ist R eigentlich? Wie funktioniert RStudio? Und warum ist ein Pfeil plötzlich ein Zuweisungsoperator?
 -   *Daten aufräumen wie Marie Kondo* – Von wildem Datenchaos zur sauberen Tabelle: Importieren, Filtern, Umkodieren, Zusammenführen.
 -   *Der Weg zur Analyse* – Sobald deine Daten bereit sind, wird der statistische Teil plötzlich viel einfacher. Wirklich.
+

@@ -28,12 +28,20 @@ h6 {
       padding-top: .715rem;
       padding-bottom: .715rem;
       color: white; //navbar text color
+        &:hover {
+            color: white;
+        }
+        &:active {
+            color: white;
+        }
     }
+
   }
 
    &-brand {
     margin-right: 2rem;
     color: white; //title color 
   }
+
   }
 
