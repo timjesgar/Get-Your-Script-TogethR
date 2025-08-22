@@ -181,6 +181,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Rste Schritte</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutorials/saubR-machen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SaubR machen</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -192,7 +198,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#rstudio-interface" id="toc-rstudio-interface" class="nav-link active" data-scroll-target="#rstudio-interface"><em>RStudio</em> Interface</a></li>
-  <li><a href="#skripte-und-befehle" id="toc-skripte-und-befehle" class="nav-link" data-scroll-target="#skripte-und-befehle">Skripte und Befehle</a></li>
+  <li><a href="#befehle-und-skripte" id="toc-befehle-und-skripte" class="nav-link" data-scroll-target="#befehle-und-skripte">Befehle und Skripte</a></li>
+  <li><a href="#zuweisung-von-objekten" id="toc-zuweisung-von-objekten" class="nav-link" data-scroll-target="#zuweisung-von-objekten">Zuweisung von Objekten</a></li>
+  <li><a href="#datentypen-und-strukturen" id="toc-datentypen-und-strukturen" class="nav-link" data-scroll-target="#datentypen-und-strukturen">Datentypen und Strukturen</a></li>
+  <li><a href="#funktionen" id="toc-funktionen" class="nav-link" data-scroll-target="#funktionen">Funktionen</a></li>
+  <li><a href="#pakete" id="toc-pakete" class="nav-link" data-scroll-target="#pakete">Pakete</a></li>
+  <li><a href="#arbeitsverzeichnis" id="toc-arbeitsverzeichnis" class="nav-link" data-scroll-target="#arbeitsverzeichnis">Arbeitsverzeichnis</a></li>
+  <li><a href="#was-du-bisher-gelernt-hast" id="toc-was-du-bisher-gelernt-hast" class="nav-link" data-scroll-target="#was-du-bisher-gelernt-hast">Was du bisher gelernt hast</a></li>
   </ul>
 </nav>
     </div>
@@ -287,15 +299,324 @@ Designoptionen
 </div>
 </div>
 </section>
-<section id="skripte-und-befehle" class="level3">
-<h3 class="anchored" data-anchor-id="skripte-und-befehle">Skripte und Befehle</h3>
+<section id="befehle-und-skripte" class="level3">
+<h3 class="anchored" data-anchor-id="befehle-und-skripte">Befehle und Skripte</h3>
 <p>Code kannst du zwar auch direkt in der Konsole schreiben und ausführen, allerdings wird dieser dort nicht nach der Sitzung erhalten. Um dein Vorgehen für dich und andere replizierbar zu machen, empfiehlt es sich mit Skripten zu arbeiten. Bei einem Skript handelt es sich um eine Datei, in der du Code schreiben und diesen direkt ausführen kannst. Um ein neues Skript zu erstellen, wähle im Menü File &gt; New File &gt; R Script oder klicke alternativ auf das Blatt mit dem Plussymbol links oben und wähle dort “R Script” aus.</p>
 <p>Das leere Skript kannst du jetzt mit deinem Code füllen. Probier es doch gleich mal aus und schreibe eine einfache Rechnung in dein Skript:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
 </div>
-<p>Den Code kannst du jetzt direkt ausführen, indem du in die zugehörige Zeile klickst und <kbd aria-hidden="true">Strg+Enter</kbd><span class="visually-hidden">Strg+Enter</span> drückst. Der ausgeführte Code und das Ergebnis erscheinen dann unten in der Konsole. Du kannst auch mehrere Befehle ausführen, indem du die Codezeilen markierst und dann Strg + Enter drückst. Du hast außerdem die Möglichkeit, oben rechts im Source-Pane mit einem Mausklick den markierten Code auszuführen.</p>
-<p>Pro Tipp: STRg+Shift+Enter für das gesamte Skript</p>
+</div>
+<p>Den Code kannst du jetzt direkt ausführen, indem du in die zugehörige Zeile klickst und <kbd aria-hidden="true" data-mac="Cmd+Return" data-windows="Strg+Enter"></kbd><span class="visually-hidden"></span> drückst. Der ausgeführte Code und das Ergebnis erscheinen dann unten in der Konsole. Du kannst auch mehrere Befehle ausführen, indem du die Codezeilen markierst und dann <kbd aria-hidden="true" data-mac="Cmd+Return" data-windows="Strg+Enter"></kbd><span class="visually-hidden"></span> drückst. Du hast außerdem die Möglichkeit, oben rechts im Source-Pane mit einem Mausklick den markierten Code auszuführen. Wenn du dein gesamtes Skript auf einmal ausführen möchtest, geht das ganz einfach über <kbd aria-hidden="true" data-mac="Cmd+Shift+Return">Strg+Shift+Enter</kbd><span class="visually-hidden">Strg+Shift+Enter</span>.</p>
+</section>
+<section id="zuweisung-von-objekten" class="level3">
+<h3 class="anchored" data-anchor-id="zuweisung-von-objekten">Zuweisung von Objekten</h3>
+<p>In R arbeitet man fast immer mit Objekten – das sind „Behälter“, in denen Werte, Vektoren, Dataframes oder ganze Modelle gespeichert werden können. Damit man diese später weiterverwenden kann, muss man sie einem Namen zuweisen. Dafür verwendet man den Zuweisungsoperator <code>&lt;-</code> :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> x <span class="ot">&lt;-</span> <span class="dv">8</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> ich_bin_ein_objekt <span class="ot">&lt;-</span> <span class="st">"Objekt"</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Im Environment sieht man jetzt auch die erstellten Objekte:</p>
+<p><img src="../resources/RStudio_environment.png" width="750"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tipp
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Damit du nicht immer &lt; und - einzeln tippen musst, kannst du den Shortcut <kbd aria-hidden="true" data-mac="Option+-" data-windows="Alt+-"></kbd><span class="visually-hidden"></span> zum Einfügen des Zuweisungsoperators nutzen.</p>
+</div>
+</div>
+</div>
+<p>Objektnamen müssen immer mit einem Buchstaben beginnen und dürfen nur Buchstaben, Zahlen, _ und . enthalten. Außerdem empfehlen wir, dich für ein einheitliches Benennungsschema zu entscheiden (z.B. snake_case oder CamelCase).</p>
+<p>Jetzt fragst du dich vielleicht, wofür wir solche Objekte überhaupt brauchen.</p>
+<ul>
+<li><strong>Wiederverwendbarkeit</strong>: Statt Zahlen oder Daten immer neu einzutippen, ruft man einfach das Objekt auf.</li>
+<li><strong>Lesbarkeit</strong>: Klar benannte Objekte machen den Code verständlicher.</li>
+<li><strong>Flexibilität</strong>: Ändert man das Objekt an einer Stelle, kann man es überall im Skript nutzen, ohne mehrfach suchen und ersetzen zu müssen.</li>
+<li><strong>Struktur</strong>: Komplexe Analysen bestehen aus vielen Zwischenschritten – Objekte helfen, diese geordnet zu speichern.</li>
+</ul>
+<p>Um dir ein Objekt anzusehen, führe einfach seinen Namen aus. Aber Achtung: Schreibfehler haben Konsequenzen.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> Ich_bin_ein_Objekt </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'Ich_bin_ein_Objekt' not found</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> ich_bin_ein_objekt</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Objekt"</code></pre>
+</div>
+</div>
+</section>
+<section id="datentypen-und-strukturen" class="level3">
+<h3 class="anchored" data-anchor-id="datentypen-und-strukturen">Datentypen und Strukturen</h3>
+<p>Die für uns wichtigsten Datentypen in R sind (a) <em>numeric</em> (5, 7.8, 3462), (b) <em>character</em> (“Blume”, “14”, “FALSE”) und (c) <em>logical</em> (TRUE oder FALSE). Mit der Funktion <code>class()</code> kannst du überprüfen, welcher Datentyp ein bestimmtes Objekt ist.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> x <span class="ot">&lt;-</span> <span class="dv">8</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">class</span>(x)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "numeric"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> y <span class="ot">&lt;-</span> <span class="st">"Blume"</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">class</span>(y)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> z <span class="ot">&lt;-</span> <span class="cn">TRUE</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">class</span>(z)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "logical"</code></pre>
+</div>
+</div>
+<p>Neben Datentypen unterscheiden wir noch zwischen verschiedenen Datenstrukturen. Die Art der Datenstruktur hängt von ihren Dimensionen sowie ihrer Heterogenität ab. <strong>Atomische Vektoren</strong> z.B. enthalten mehrere Werte des gleichen Typs (z.B. nur numerics) und sind damit eindimensional und homogen. <strong>Listen</strong> sind auch eindimensional, aber sie können unterschiedliche Datentypen enthalten. Eine <strong>Matrix</strong> ist zweidimensional (Zeilen x Spalten) und homogen. Bei der Auswertung deiner Daten wirst du vermutlich am meisten mit <strong>Dataframes</strong> zu tun haben. Dataframes kannst du als Tabellen betrachten, die die Eigenschaften von Listen und Matrizen kombinieren, indem sie zweidimensional und heterogen sind. D.h., unterschiedliche Spalten innerhalb des Dataframes dürfen unterschiedliche Datentypen enthalten.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;">Homogen</th>
+<th style="text-align: left;">Heterogen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Eindimensional</td>
+<td style="text-align: left;">Atomischer Vektor</td>
+<td style="text-align: left;">Liste</td>
+</tr>
+<tr class="even">
+<td>Zweidimensional</td>
+<td style="text-align: left;">Matrix</td>
+<td style="text-align: left;">Dataframe</td>
+</tr>
+<tr class="odd">
+<td>n-Dimensional</td>
+<td style="text-align: left;">Array</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>In R kannst du folgendermaßen die verschiedenen Datenstrukturen erstellen:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Vektor</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>zahlen <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)          <span class="co"># numeric</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>woerter <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)      <span class="co"># character</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>logisch <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>)  <span class="co"># logical</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Matrix </span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Liste </span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">zahlen =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> <span class="st">"Hallo"</span>,</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">df =</span> <span class="fu">data.frame</span>(<span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">wert =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">20</span>))</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Dataframe </span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Anna"</span>, <span class="st">"Ben"</span>, <span class="st">"Chris"</span>),</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">25</span>, <span class="dv">30</span>),</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">student =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>)</span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="faktoren" class="level4">
+<h4 class="anchored" data-anchor-id="faktoren">Faktoren</h4>
+<p>Neben atomischen Vektoren (nur ein Datentyp) gibt es auch <strong>Faktoren</strong> – das sind spezielle Vektoren für kategoriale Daten mit <em>Levels</em>. Ein Faktor sieht auf den ersten Blick aus wie ein Character-Vektor, speichert intern aber zusätzlich die Liste der erlaubten Kategorien und deren Reihenfolge. Daher kommt er bei der Arbeit mit psychologischen Datensätzen oft zum Einsatz.</p>
+<ol type="1">
+<li>Ein Character-Vektor lässt sich ganz einfach als Faktor darstellen. Wie man anhand des Beispiels sieht, wird pro einzigartigem Wert ein Level erstellt:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>f1 <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"rot"</span>, <span class="st">"blau"</span>, <span class="st">"rot"</span>, <span class="st">"grün"</span>))</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(f1)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "blau" "grün" "rot" </code></pre>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Man kann auch die Reihenfolge der Levels festlegen, damit sie z.B. beim Plotten der Daten in der richtigen Reihenfolge angezeigt werden. Wichtig zu beachten ist, dass es sich hierbei nicht um eine mathematische Beziehung handelt. Hier sagst du nur: Wenn R die Kategorien anzeigt oder plottet, bitte in dieser Reihenfolge. Aber R versteht nicht, dass „niedrig &lt; mittel &lt; hoch“ eine Rangordnung ist (dazu unter 4. mehr).</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>f2 <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"mittel"</span>, <span class="st">"hoch"</span>, <span class="st">"niedrig"</span>, <span class="st">"mittel"</span>),</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"niedrig"</span>, <span class="st">"mittel"</span>, <span class="st">"hoch"</span>))</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(f2)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "niedrig" "mittel"  "hoch"   </code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Man kann einem bestehenden Vektor auch eigene Labels zuweisen:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>codes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">3</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>f3 <span class="ot">&lt;-</span> <span class="fu">factor</span>(codes, <span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), </span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>                    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Kontrolle"</span>, <span class="st">"Treatment A"</span>, <span class="st">"Treatment B"</span>))</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="1">
+<li>Wenn du festlegen möchtest, dass es sich um einen geordneten Faktor handelt, kannst du das über den <em>ordered</em> Befehl machen. Hier sagst du: „Das sind nicht nur Kategorien, sondern eine Rangskala.“ R weiß jetzt: stimme nicht zu &lt; neutral &lt; stimme zu. Das erlaubt nicht nur Vergleiche, sondern kommt auch bei statistischen Verfahren zum Einsatz (z. B. ordinale Regression).</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>likert <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"stimme zu"</span>,<span class="st">"neutral"</span>,<span class="st">"stimme nicht zu"</span>),</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"stimme nicht zu"</span>,<span class="st">"neutral"</span>,<span class="st">"stimme zu"</span>),</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">ordered =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>likert[<span class="dv">1</span>] <span class="sc">&lt;</span> likert[<span class="dv">3</span>] </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Ebenfalls wichtig für statistische Modelle ist die Referenzkategorie, die sich wie folgt setzen bzw. ändern lässt:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>gruppe <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"Kontrolle"</span>, <span class="st">"A"</span>, <span class="st">"B"</span>))</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>gruppe <span class="ot">&lt;-</span> <span class="fu">relevel</span>(gruppe, <span class="at">ref =</span> <span class="st">"Kontrolle"</span>)   </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="funktionen" class="level3">
+<h3 class="anchored" data-anchor-id="funktionen">Funktionen</h3>
+<p>In R erledigt man fast alles mit Funktionen. Eine Funktion nimmt Eingaben (sogenannte <strong>Argumente</strong>) entgegen, führt Berechnungen aus und gibt ein Ergebnis zurück.</p>
+<p>Die allgemeine Schreibweise lautet:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">funktion</span>(<span class="at">argument1 =</span> wert1, <span class="at">argument2 =</span> wert2, ...)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Der Funktionsname steht vorne.</li>
+<li>In den runden Klammern werden die Argumente angegeben.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Viele Funktionen haben Standardwerte, sodass man nicht alle Argumente zwingend angeben muss.</p>
+</div>
+</div>
+</div>
+<section id="beispiele" class="level4">
+<h4 class="anchored" data-anchor-id="beispiele">Beispiele</h4>
+<p>R verfügt über eine Vielzahl von Funktionen, die sich anwenden lassen. Mit ihnen kann man beispielsweise schnell den Mittelwert, die Summe oder die Länge eines Vektors bestimmen:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mittelwert berechnen</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>zahlen <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(zahlen)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Summe</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(zahlen)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 15</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Länge eines Vektors</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(zahlen)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+</section>
+<section id="r-documentation" class="level4">
+<h4 class="anchored" data-anchor-id="r-documentation">R Documentation</h4>
+<p>Falls du dir unsicher bist, wie eine Funktion genau funktioniert oder welche Argumente sie erwartet, kannst du die integrierte Hilfe in R nutzen:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>?mean           </span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(mean) <span class="co"># alternativ      </span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Alternativ kannst du auch rechts unten in RStudio über das <em>Help</em>-Fenster nach der Funktion suchen.</p>
+<p><img src="../resources/help-RStudio.png" width="750"></p>
+<p>Wenn du nicht genau weißt, wie eine Funktion heißt, kannst du nach Stichworten suchen:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>??median</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="pakete" class="level3">
+<h3 class="anchored" data-anchor-id="pakete">Pakete</h3>
+<p>R verfügt vom Punkt der Installation aus bereits über eine Vielzahl an Funktionen. Da es sich um eine Programmiersprache handelt, stehen online aber auch zusätzliche <strong>Pakete</strong> kostenlos zur Verfügung, die <em>Base R</em> um Funktionen für spezifische Anwendungen oder quality-of-life Verbesserungen erweitern. Neue Pakete müssen vor der Nutzung einmal installiert und dann bei jedem Neustart von R geladen werden. Dafür stehen glücklicherweise passende Funktionen zur Verfügung.</p>
+<p>Probier das doch gleich mal aus, indem du das Paket <em>tidyverse</em> installierst.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># einmalig installieren</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="co"># jedes Mal laden, wenn du es nutzen möchtest</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Das tidyverse
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Das tidyverse ist eine Sammlung von R-Paketen, die für Datenanalyse und Datenvisualisierung entwickelt wurden. Alle Pakete im tidyverse folgen gemeinsamen Designprinzipien und einer einheitlichen Syntax, sodass sie gut zusammenarbeiten.</p>
+<p>Mit dem tidyverse kannst du deine Daten:</p>
+<ul>
+<li>importieren (z. B. readr für CSV-Dateien),</li>
+<li>aufräumen (z. B. tidyr für fehlende Werte oder Umformungen),</li>
+<li>bearbeiten (z. B. dplyr für Filter, Gruppierungen, Berechnungen),</li>
+<li>visualisieren (z. B. ggplot2 für Plots).</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Wir empfehlen, die innerhalb deines R-Skriptes verwendeten Pakete auch immer dort zu laden. So musst du beim nächsten mal nur den Code ausführen und bekommst keine Fehlermeldungen wegen fehlender Funktionen.</p>
+</section>
+<section id="arbeitsverzeichnis" class="level3">
+<h3 class="anchored" data-anchor-id="arbeitsverzeichnis">Arbeitsverzeichnis</h3>
+<p>Das Arbeitsverzeichnis ist der Ordner, in dem R standardmäßig nach Dateien sucht und in dem neue Dateien gespeichert werden. Wenn du z. B. eine CSV-Datei einliest, ohne den vollständigen Pfad anzugeben, sucht R sie im aktuellen Arbeitsverzeichnis.</p>
+<p>Du kannst das aktuelle Arbeitsverzeichnis mit folgendem Befehl herausfinden:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Um es zu ändern, kannst du den Pfad manuell setzen:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"C:/Users/DeinName/Projektordner"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Achtung</strong>: Das manuelle Setzen des Arbeitsverzeichnisses ist fehleranfällig, wenn du Dateien oder Ordner verschiebst oder wenn andere deinen Code ausführen wollen.</p>
+<section id="besser-r-projects" class="level4">
+<h4 class="anchored" data-anchor-id="besser-r-projects">Besser: R Projects</h4>
+<p>Eine deutlich bessere Lösung ist es, mit RStudio Projects zu arbeiten. Ein Project ist im Prinzip ein Ordner, den RStudio als Arbeitsumgebung behandelt. Wenn du ein Project öffnest, wird das Arbeitsverzeichnis automatisch auf den Projektordner gesetzt.</p>
+<p>Damit musst du dich nicht mehr mit setwd() herumärgern, und dein Code bleibt reproduzierbar – auch für andere.</p>
+<p>Wir erklären dir die Arbeit mit Projects <a href="../reproducible-projects/reproducible_projects.html">hier</a> genauer.</p>
+</section>
+</section>
+<section id="was-du-bisher-gelernt-hast" class="level3">
+<h3 class="anchored" data-anchor-id="was-du-bisher-gelernt-hast">Was du bisher gelernt hast</h3>
+<p>Nach diesem Kapitel solltest du:</p>
+<ul>
+<li>wissen, dass R eine Programmiersprache ist und RStudio eine benutzerfreundliche Arbeitsumgebung (IDE),</li>
+<li>das Interface von RStudio mit seinen vier Bereichen (Source, Console, Environment/History, Files/Plots/Packages/Help/Viewer) kennen,</li>
+<li>verstehen, warum es sinnvoll ist, mit Skripten statt nur in der Konsole zu arbeiten,</li>
+<li>Objekte erstellen und zuweisen können (mit <code>&lt;-</code>),</li>
+<li>die wichtigsten Datentypen unterscheiden (numeric, character, logical, factor),</li>
+<li>die grundlegenden Datenstrukturen in R benennen und einfache Beispiele erstellen können (Vektor, Liste, Matrix, Dataframe),</li>
+<li>wissen, wie man Funktionen aufruft, Argumente übergibt und die Hilfefunktion nutzt,</li>
+<li>verstanden haben, wie man Pakete installiert und lädt (z. B. das tidyverse),</li>
+<li>den Unterschied zwischen Arbeitsverzeichnis und R Projects kennen – und dass wir für reproduzierbare Analysen Projects empfehlen.</li>
+</ul>
 
 
 </section>
