@@ -38,7 +38,7 @@ website:
 format:
   html:
     theme:
-      - lux
+      - minty
       - custom.scss
 
     toc: true
