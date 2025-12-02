@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="TLJ">
+<meta name="author" content="VN">
 
-<title>Reproduzierbare Analyseprojekte mit R – Get Your Script TogethR!</title>
+<title>SaubR machen – Get Your Script TogethR!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-972413c61263d3b7e87374ee8efee60f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-bfa6e08bdd6002d49df9acb010ba83d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../tutorials/fuer-einsteigr.html"> 
+    <a class="nav-link active" href="../tutorials/fuer-einsteigr.html" aria-current="page"> 
 <span class="menu-text">TUTORIALS</span></a>
   </li>  
   <li class="nav-item">
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">HOW-TOS</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../reproducible-projects/reproducible_projects.html" aria-current="page"> 
+    <a class="nav-link" href="../reproducible-projects/reproducible_projects.html"> 
 <span class="menu-text">REPRODUCIBLE PROJECTS</span></a>
   </li>  
   <li class="nav-item">
@@ -115,35 +115,55 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/saubR-machen.html">SaubR machen</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Auf dieser Seite</h2>
-   
-  <ul>
-  <li><a href="#wieso-reproduzierbare-r-projekte" id="toc-wieso-reproduzierbare-r-projekte" class="nav-link active" data-scroll-target="#wieso-reproduzierbare-r-projekte">Wieso Reproduzierbare R-Projekte?</a></li>
-  <li><a href="#tldr" id="toc-tldr" class="nav-link" data-scroll-target="#tldr">tl;dr</a></li>
-  <li><a href="#im-detail" id="toc-im-detail" class="nav-link" data-scroll-target="#im-detail">Im Detail</a>
-  <ul class="collapse">
-  <li><a href="#struktur-eines-analyseprojekts" id="toc-struktur-eines-analyseprojekts" class="nav-link" data-scroll-target="#struktur-eines-analyseprojekts">Struktur eines Analyseprojekts</a>
-  <ul class="collapse">
-  <li><a href="#erstellen-des-projektordners" id="toc-erstellen-des-projektordners" class="nav-link" data-scroll-target="#erstellen-des-projektordners">Erstellen des Projektordners</a></li>
-  <li><a href="#erstelle-die-unterordner-struktur" id="toc-erstelle-die-unterordner-struktur" class="nav-link" data-scroll-target="#erstelle-die-unterordner-struktur">Erstelle die Unterordner-Struktur</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutorials/fuer-einsteigr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Für EinsteigR</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutorials/Rste-schritte.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rste Schritte</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutorials/saubR-machen.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">SaubR machen</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
 </nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reproduzierbare Analyseprojekte mit R</h1>
+<h1 class="title">SaubR machen</h1>
 </div>
 
 
@@ -153,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Autor:in</div>
     <div class="quarto-title-meta-contents">
-             <p>TLJ </p>
+             <p>VN </p>
           </div>
   </div>
     
@@ -166,98 +186,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="wieso-reproduzierbare-r-projekte" class="level1">
-<h1>Wieso Reproduzierbare R-Projekte?</h1>
-<p>Ein Ziel von Open Science ist die Reproduzierbarkeit von Studienergebnissen auf Basis der Originaldaten. Um dies zu gewährleisten, ist es hilfreich, neben den Originaldaten auch die genutzten Code-Skripte im “Plug-and-Play”-Format aufzubereiten und zu veröffentlichen. “Plug-and-Play” bezieht sich hierbei darauf, dass eine andere Person durch das einfache durchlaufen lassen der Skripte zu dem selben Ergebnis kommt, die auch berichtet wurden.</p>
-<p>Was zunächst simpel klingt, ist in der Anwendung meist komplexer als man denkt: Skripte entwickeln sich über den Lauf eines Projektes organisch zu Ungetümen, bei denen selbst die verfassende Person nicht mehr durchblickt. Wichtige Dateipfade werden hard-coded, sodass das Skript nicht mehr funktioniert, wenn es verschoben wird. Oder, ein R-Paket wird auf eine Art aktualisiert, dass der gestern noch funktionierende Code nur noch Fehler wirft. Auch wenn nicht jede Eventualität vorhergesehen werden kann, so kann man doch Schritte gehen, um solche Probleme möglichst minimal zu halten. Einige diese Schritte, von vorausschauendem Kommentieren, über adaptive relative Pfaden, zu reproduzierbaren R-Umgebungen, sollen hier vorgestellt werden um einen Einblick zu geben, wie man mit überschaubarem Aufwand die eigenen Analysen reproduzierbarer machen kann.</p>
-</section>
-<section id="tldr" class="level1">
-<h1>tl;dr</h1>
-<p>Schritte zu einem reproduzierbareren Analyseprojekt:</p>
-<ul>
-<li>Erstelle für jedes Analyseprojekt einen <strong>Projektordner mit verständlicher Unterordnerstruktur</strong>.</li>
-<li><strong>Nutze eine reproduzierbare R-Umgebung mittels <code>renv::</code></strong>, damit Updates externer R-Pakete nicht deinen Code kaputt machen.</li>
-<li><strong>Nutze relative Pfade mittels <code>here::</code></strong>, um dein Projekt portabel zu machen.</li>
-<li><strong>Ordne deine Code-Skripte nachvollziehbar</strong>: Setup (Pakete laden, globale Variablen definieren) -&gt; Daten laden -&gt; Datentransformationen -&gt; Auswertung</li>
-<li><strong>Sei konsistent in deiner Benennung von Objekten und Variablen</strong> (z.B. <code>snake_case</code> oder <code>CamelCase</code>, jedoch nicht <code>Wasauchimmerdashierist</code>).</li>
-<li><strong>Nutze Code-Kommentare, um den Sinn hinter deinem Vorgehen zu erklären</strong>, nicht die Funktionsweise von etablierten Funktionen.</li>
-<li><strong>Behandle deinen Code als “First-class Citizen”</strong>: Originaldaten + Auswertungscode &gt; Aufbereitete Daten, von denen man nicht weiß, wie sie zustande kamen.</li>
-</ul>
-</section>
-<section id="im-detail" class="level1">
-<h1>Im Detail</h1>
-<section id="struktur-eines-analyseprojekts" class="level2">
-<h2 class="anchored" data-anchor-id="struktur-eines-analyseprojekts">Struktur eines Analyseprojekts</h2>
-<p>Zuallererst ist es hilfreich, für jedes Analyseprojekt einen dedizierten Ordner zu haben, anstatt einen Riesenordner mit diversen Skripten von verschiedenen Projekten zu kultivieren. Dieses partialisierte Vorgehen hat einige Vorteile:</p>
-<ul>
-<li><strong>Übersichtlichkeit</strong>: Du suchst nach einem Projekt, welches du vor Jahren abgeschlossen hast? Ein Ordner <em>202X_projekt-name</em> ist schnell gefunden.</li>
-<li><strong>Erwartbarkeit</strong>: Idealerweise ist der Aufbau jedes Projekts, also welche Unterordner es gibt und wo relevante Dateien liegen, identisch. Das macht es einfach, sich in Projekte reinzudenken, die man lange nicht mehr geöffnet hat.</li>
-<li><strong>Zuordbarkeit relevanter Dateien</strong>: Du nennst für jede Analyse den Originaldatensatz gleich? Das kann schnell zum Problem werden, wenn du nicht mehr weißt, ob <em>raw_data1.csv</em> oder <em>raw_data2.csv</em> der richtige Datensatz für dein aktuelles Projekt ist. Ein Projektordner löst das Problem, da nur die zugehörigen Dateien in den jeweiligen Ordnern gespeichert werden.</li>
-<li><strong>Portabilität</strong>: Du willst deine Analysen mit jemand anderem teilen? Kein Problem! Teile einfach den gesamten Projektordner!</li>
-</ul>
-<p>Du siehst, so ein Analyseprojekt kann einiges leichter machen. Damit du vollumfänglich von diesen Vorteilen profitieren kannst, müssen wir allerdings beim Setup des Projekts einige Dinge beachten. Fangen wir erstmal mit der Ordnerstruktur selbst an:</p>
-<section id="erstellen-des-projektordners" class="level3">
-<h3 class="anchored" data-anchor-id="erstellen-des-projektordners">Erstellen des Projektordners</h3>
-<p>Das einfachste Vorgehen ist, einen Ordner manuell zu erstellen und mit einem deskriptiven Name zu versehen (z.B. <em>2025_projekt-projektname</em>). Wenn du aber, wie wahrscheinlich die meisten, deine R-Analysen mittels einer IDE (Integrated Development Environment) wie <a href="https://posit.co/products/open-source/rstudio/?sid=1">RStudio</a> oder <a href="https://positron.posit.co/">Positron</a> durchführst, ist es sinnvoll, das Projektsetup der jeweiligen IDE zu überlassen. Dadurch werden dir einige Setup-Schritte abgenommen und du kannst dir sicher sein, dass deine IDE deinen Projektordner auch als Projekt erkennt.</p>
-<p>Hier also das Vorgehen für zwei der bekanntesten IDEs für das arbeiten mit R:</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Projekt-Setup mit RStudio
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li><p>Öffne RStudio</p></li>
-<li><p>Klicke oben Links im Interface auf das R Projekt Icon (R in einem blauen Würfel)</p></li>
-<li><p>Es öffnet sich ein Popup-Fenster, in dem wir auswählen können, ob wir einen neuen Ordner für das Projekt erstellen wollen, wir das Projekt mit einem bestehenden Ordner verknüpfen wollen, oder ob wir ein bestehendes Projekt mit Version Control (z.B. Git) klonen wollen. Wir wählen die erste Option für ein ganz frisches Projekt</p></li>
-<li><p>Im nächsten Popup-Fenster können wir die Art des Projekts auswählen. Optionen beinhalten Projekte für das Erstellen von R Paketen, Shiny Apps, oder dem Schreiben von Texten mit Code via Quarto. Wir entscheiden uns für die oberste Option: Ein einfaches R Projekt</p></li>
-<li><p>Im nächsten Popup-Fenster können wir den Projektnamen und Speicherort wählen. Außerdem bestätigen wir hier, dass wir <code>renv</code> nutzen wollen, um die von uns genutzten R-Pakete direkt mit dem Projekt zu verbinden. Wenn wir zufrieden mit unserer Auswahl sind, erstellen wir das neue Projekt mittels eines Klicks auf <em>Create Project</em></p></li>
-<li><p>Sobald wir das neu erstellte Projekt öffnen, sehen wir in der oberen rechten Ecke der IDE den Namen unseres Projekts und können damit sicher sein, dass wir unser Projekt richtig geöffnet haben. Außerdem sehen wir in der Konsole, wie <code>renv</code> für das Projekt initialisiert wird. Nach erfolgreicher Initialisierung erscheinen ein neuer Ordner (<em>renv/</em>), sowie zwei neue Dateien (<em>.Rprofile</em> und <em>renf.lock</em>) in unserem Projektordner. Neben den Dateien von <code>renv</code> sehen wir außerdem eine Datei, die den Projektnamen beinhaltet und mit <em>.Rproj</em> endet. Durch diese Datei erkennt RStudio, dass es sich bei dem Ordner um ein R Projekt handelt. Sie dient außerdem als Referenz fur das R-Paket <code>here</code>. <code>here</code> hilft uns dabei, Ordner und Dateien in unserem Projekt mittels relativer Pfade zu finden. Dafür muss <code>here</code> allerdings wissen, wo die oberste Ebene unseres Projektes ist. Glücklicherweise erkennt <code>here</code> die <em>.Rproj</em> Datei als Referenz an, weswegen wir nichts weiteres tun müssen.</p></li>
-<li><p>Damit steht der Rohbau deines Projekts, congrats! Um dein Projekt neu zu öffnen kannst du einfach die <em>.Rproj</em> Datei in deinem Projektordner doppelklicken, wodurch eine neue RStudio Session mit aktiviertem Projekt geöffnet wird.</p></li>
-</ol>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Projekt-Setup mit Positron
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../resources/reproducible_projects/create-project_positron.mp4"></video></div>
-<ol type="1">
-<li><p>Öffne Positron</p></li>
-<li><p>Klicke oben Links im Interface auf <em>New</em> und wähle in der Auswahl <em>New Folder from Template…</em> aus (Video 0:05)</p></li>
-<li><p>Es öffnet sich ein Popup-Fenster, in dem wir die präferierte Programmierplattform wählen können. Wir wählen hier <em>R Project</em> und bestätigen (Video 0:12)</p></li>
-<li><p>Im nächsten Popup-Fenster können wir den Projektnamen und Speicherort wählen. Außerdem können wir hier unser Projekt für Version Control mittels Git vorbereiten (Video 0:21)</p></li>
-<li><p>Als nächstes wählen wir die von uns genutzte R Version aus. Wir bleiben hier bei der Default Auswahl: Der vom System genutzten Version. Außerdem bestätigen wir hier, dass wir <code>renv</code> nutzen wollen, um die von uns genutzten R-Pakete direkt mit dem Projekt zu verbinden. Wenn wir zufrieden mit unserer Auswahl sind, erstellen wir das neue Projekt mittels eines Klicks auf <em>Create</em> (Video 0:41)</p></li>
-<li><p>Sobald wir das neu erstellte Projekt öffnen, sehen wir in der oberen rechten Ecke der IDE den Namen unseres Projekts und können damit sicher sein, dass wir unser Projekt richtig geöffnet haben. Außerdem sehen wir in der Konsole, wie <code>renv</code> für das Projekt initialisiert wird. Nach erfolgreicher Initialisierung erscheinen ein neuer Ordner (<em>renv/</em>), sowie zwei neue Dateien (<em>.Rprofile</em> und <em>renf.lock</em>) in unserem Projektordner. (Video 0:57)</p></li>
-<li><p>Nun bleibt uns nur noch, eine Referenz für das R-Paket <code>here</code> zu setzen. <code>here</code> hilft uns dabei, Ordner und Dateien in unserem Projekt mittels relativer Pfade zu finden. Dafur muss <code>here</code> allerdings wissen, wo die oberste Ebene unseres Projektes ist. Dafür erstellen wir eine leere Datei mit dem Namen <em>.here</em> auf der obersten Ebene unseres Projektes. Dafür können wir z.B. den <em>Explorer</em>-Tab von Positron auf der linken Seite nutzen (Video 1:12)</p></li>
-<li><p>Damit steht der Rohbau deines Projekts, congrats! Um dein Projekt in einer neuen Positron Session zu öffnen, kannst du in der oberen linken Ecke der IDE unter <em>Open</em> -&gt; *Open Folder.</p></li>
-</ol>
-</div>
-</div>
-</div>
-</section>
-<section id="erstelle-die-unterordner-struktur" class="level3">
-<h3 class="anchored" data-anchor-id="erstelle-die-unterordner-struktur">Erstelle die Unterordner-Struktur</h3>
 
 
-</section>
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -667,7 +597,6 @@ Projekt-Setup mit Positron
   });
   </script>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

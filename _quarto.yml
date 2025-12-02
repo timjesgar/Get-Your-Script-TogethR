@@ -33,11 +33,12 @@ website:
       contents: 
         - tutorials/fuer-einsteigr.qmd
         - tutorials/Rste-schritte.qmd
+        - tutorials/saubR-machen.qmd
 
 format:
   html:
     theme:
-      - lux
+      - minty
       - custom.scss
 
     toc: true
