@@ -40,7 +40,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2edb3b2191d0d4347045ba1b7cfc6e1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-be78eb90313e59509800a477e4003e5e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -91,23 +93,23 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../tutorials/fuer-einsteigr.html"> 
-<span class="menu-text">Tutorials</span></a>
+<span class="menu-text">TUTORIALS</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../how-tos/how-tos.html"> 
-<span class="menu-text">How-Tos</span></a>
+<span class="menu-text">HOW-TOS</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../reproducible-projects/reproducible_projects.html" aria-current="page"> 
-<span class="menu-text">Reproducible Projects</span></a>
+<span class="menu-text">REPRODUCIBLE PROJECTS</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">ABOUT</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -212,7 +214,15 @@ Projekt-Setup mit RStudio
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>TODO</p>
+<ol type="1">
+<li><p>Öffne RStudio</p></li>
+<li><p>Klicke oben Links im Interface auf das R Projekt Icon (R in einem blauen Würfel)</p></li>
+<li><p>Es öffnet sich ein Popup-Fenster, in dem wir auswählen können, ob wir einen neuen Ordner für das Projekt erstellen wollen, wir das Projekt mit einem bestehenden Ordner verknüpfen wollen, oder ob wir ein bestehendes Projekt mit Version Control (z.B. Git) klonen wollen. Wir wählen die erste Option für ein ganz frisches Projekt</p></li>
+<li><p>Im nächsten Popup-Fenster können wir die Art des Projekts auswählen. Optionen beinhalten Projekte für das Erstellen von R Paketen, Shiny Apps, oder dem Schreiben von Texten mit Code via Quarto. Wir entscheiden uns für die oberste Option: Ein einfaches R Projekt</p></li>
+<li><p>Im nächsten Popup-Fenster können wir den Projektnamen und Speicherort wählen. Außerdem bestätigen wir hier, dass wir <code>renv</code> nutzen wollen, um die von uns genutzten R-Pakete direkt mit dem Projekt zu verbinden. Wenn wir zufrieden mit unserer Auswahl sind, erstellen wir das neue Projekt mittels eines Klicks auf <em>Create Project</em></p></li>
+<li><p>Sobald wir das neu erstellte Projekt öffnen, sehen wir in der oberen rechten Ecke der IDE den Namen unseres Projekts und können damit sicher sein, dass wir unser Projekt richtig geöffnet haben. Außerdem sehen wir in der Konsole, wie <code>renv</code> für das Projekt initialisiert wird. Nach erfolgreicher Initialisierung erscheinen ein neuer Ordner (<em>renv/</em>), sowie zwei neue Dateien (<em>.Rprofile</em> und <em>renf.lock</em>) in unserem Projektordner. Neben den Dateien von <code>renv</code> sehen wir außerdem eine Datei, die den Projektnamen beinhaltet und mit <em>.Rproj</em> endet. Durch diese Datei erkennt RStudio, dass es sich bei dem Ordner um ein R Projekt handelt. Sie dient außerdem als Referenz fur das R-Paket <code>here</code>. <code>here</code> hilft uns dabei, Ordner und Dateien in unserem Projekt mittels relativer Pfade zu finden. Dafür muss <code>here</code> allerdings wissen, wo die oberste Ebene unseres Projektes ist. Glücklicherweise erkennt <code>here</code> die <em>.Rproj</em> Datei als Referenz an, weswegen wir nichts weiteres tun müssen.</p></li>
+<li><p>Damit steht der Rohbau deines Projekts, congrats! Um dein Projekt neu zu öffnen kannst du einfach die <em>.Rproj</em> Datei in deinem Projektordner doppelklicken, wodurch eine neue RStudio Session mit aktiviertem Projekt geöffnet wird.</p></li>
+</ol>
 </div>
 </div>
 </div>
@@ -228,14 +238,23 @@ Projekt-Setup mit Positron
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>TODO</p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../resources/reproducible_projects/create-project_positron.mp4"></video></div>
+<ol type="1">
+<li><p>Öffne Positron</p></li>
+<li><p>Klicke oben Links im Interface auf <em>New</em> und wähle in der Auswahl <em>New Folder from Template…</em> aus (Video 0:05)</p></li>
+<li><p>Es öffnet sich ein Popup-Fenster, in dem wir die präferierte Programmierplattform wählen können. Wir wählen hier <em>R Project</em> und bestätigen (Video 0:12)</p></li>
+<li><p>Im nächsten Popup-Fenster können wir den Projektnamen und Speicherort wählen. Außerdem können wir hier unser Projekt für Version Control mittels Git vorbereiten (Video 0:21)</p></li>
+<li><p>Als nächstes wählen wir die von uns genutzte R Version aus. Wir bleiben hier bei der Default Auswahl: Der vom System genutzten Version. Außerdem bestätigen wir hier, dass wir <code>renv</code> nutzen wollen, um die von uns genutzten R-Pakete direkt mit dem Projekt zu verbinden. Wenn wir zufrieden mit unserer Auswahl sind, erstellen wir das neue Projekt mittels eines Klicks auf <em>Create</em> (Video 0:41)</p></li>
+<li><p>Sobald wir das neu erstellte Projekt öffnen, sehen wir in der oberen rechten Ecke der IDE den Namen unseres Projekts und können damit sicher sein, dass wir unser Projekt richtig geöffnet haben. Außerdem sehen wir in der Konsole, wie <code>renv</code> für das Projekt initialisiert wird. Nach erfolgreicher Initialisierung erscheinen ein neuer Ordner (<em>renv/</em>), sowie zwei neue Dateien (<em>.Rprofile</em> und <em>renf.lock</em>) in unserem Projektordner. (Video 0:57)</p></li>
+<li><p>Nun bleibt uns nur noch, eine Referenz für das R-Paket <code>here</code> zu setzen. <code>here</code> hilft uns dabei, Ordner und Dateien in unserem Projekt mittels relativer Pfade zu finden. Dafur muss <code>here</code> allerdings wissen, wo die oberste Ebene unseres Projektes ist. Dafür erstellen wir eine leere Datei mit dem Namen <em>.here</em> auf der obersten Ebene unseres Projektes. Dafür können wir z.B. den <em>Explorer</em>-Tab von Positron auf der linken Seite nutzen (Video 1:12)</p></li>
+<li><p>Damit steht der Rohbau deines Projekts, congrats! Um dein Projekt in einer neuen Positron Session zu öffnen, kannst du in der oberen linken Ecke der IDE unter <em>Open</em> -&gt; *Open Folder.</p></li>
+</ol>
 </div>
 </div>
 </div>
 </section>
 <section id="erstelle-die-unterordner-struktur" class="level3">
 <h3 class="anchored" data-anchor-id="erstelle-die-unterordner-struktur">Erstelle die Unterordner-Struktur</h3>
-<p>TODO</p>
 
 
 </section>
@@ -650,6 +669,7 @@ Projekt-Setup mit Positron
   });
   </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

@@ -36,22 +36,56 @@ Du siehst, so ein Analyseprojekt kann einiges leichter machen. Damit du vollumf�
 
 ### Erstellen des Projektordners
 
-Das einfachste Vorgehen ist, einen Ordner manuell zu erstellen und mit einem deskriptiven Name zu versehen (z.B. *2025_projekt-projektname*). Wenn du aber, wie wahrscheinlich die meisten, deine R-Analysen mittels einer IDE (Integrated Development Environment) wie [RStudio](https://posit.co/products/open-source/rstudio/?sid=1) oder [Positron](https://positron.posit.co/) durchführst, ist es sinnvoll, das Projektsetup der jeweiligen IDE zu überlassen. Dadurch werden dir einige Setup-Schritte abgenommen und du kannst dir sicher sein, dass deine IDE deinen Projektordner auch als Projekt erkennt.
+Das einfachste Vorgehen ist, einen Ordner manuell zu erstellen und mit einem deskriptiven Name zu versehen (z.B. *2025_projekt-projektname*).
+Wenn du aber, wie wahrscheinlich die meisten, deine R-Analysen mittels einer IDE (Integrated Development Environment) wie [RStudio](https://posit.co/products/open-source/rstudio/?sid=1) oder [Positron](https://positron.posit.co/) durchführst, ist es sinnvoll, das Projektsetup der jeweiligen IDE zu überlassen. 
+Dadurch werden dir einige Setup-Schritte abgenommen und du kannst dir sicher sein, dass deine IDE deinen Projektordner auch als Projekt erkennt. 
 
-Hier also das Vorgehen für zwei der bekanntesten IDEs für das arbeiten mit R:
+Hier also das Vorgehen für zwei der bekanntesten IDEs für das Arbeiten mit R:
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Projekt-Setup mit RStudio
 
-TODO
+1. Öffne RStudio 
+
+2. Klicke oben Links im Interface auf das R Projekt Icon (R in einem blauen Würfel) 
+
+3. Es öffnet sich ein Popup-Fenster, in dem wir auswählen können, ob wir einen neuen Ordner für das Projekt erstellen wollen, wir das Projekt mit einem bestehenden Ordner verknüpfen wollen, oder ob wir ein bestehendes Projekt mit Version Control (z.B. Git) klonen wollen. Wir wählen die erste Option für ein ganz frisches Projekt
+
+4. Im nächsten Popup-Fenster können wir die Art des Projekts auswählen. Optionen beinhalten Projekte für das Erstellen von R Paketen, Shiny Apps, oder dem Schreiben von Texten mit Code via Quarto. Wir entscheiden uns für die oberste Option: Ein einfaches R Projekt
+
+5. Im nächsten Popup-Fenster können wir den Projektnamen und Speicherort wählen. Außerdem bestätigen wir hier, dass wir `renv` nutzen wollen, um die von uns genutzten R-Pakete direkt mit dem Projekt zu verbinden. Wenn wir zufrieden mit unserer Auswahl sind, erstellen wir das neue Projekt mittels eines Klicks auf *Create Project* 
+
+6. Sobald wir das neu erstellte Projekt öffnen, sehen wir in der oberen rechten Ecke der IDE den Namen unseres Projekts und können damit sicher sein, dass wir unser Projekt richtig geöffnet haben. Außerdem sehen wir in der Konsole, wie `renv` für das Projekt initialisiert wird. Nach erfolgreicher Initialisierung erscheinen ein neuer Ordner (*renv/*), sowie zwei neue Dateien (*.Rprofile* und *renv.lock*) in unserem Projektordner. Neben den Dateien von `renv` sehen wir außerdem eine Datei, die den Projektnamen beinhaltet und mit *.Rproj* endet. Durch diese Datei erkennt RStudio, dass es sich bei dem Ordner um ein R Projekt handelt. Sie dient außerdem als Referenz fur das R-Paket `here`. `here` hilft uns dabei, Ordner und Dateien in unserem Projekt mittels relativer Pfade zu finden. Dafür muss `here` allerdings wissen, wo die oberste Ebene unseres Projektes ist. Glücklicherweise erkennt `here` die *.Rproj* Datei als Referenz an, weswegen wir nichts weiteres tun müssen.  
+
+8. Damit steht der Rohbau deines Projekts, congrats! Um dein Projekt neu zu öffnen kannst du einfach die *.Rproj* Datei in deinem Projektordner doppelklicken, wodurch eine neue RStudio Session mit aktiviertem Projekt geöffnet wird.
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Projekt-Setup mit Positron
+{{< video ../resources/reproducible_projects/create-project_positron.mp4 >}}
 
-TODO
+1. Öffne Positron 
+
+2. Klicke oben Links im Interface auf *New* und wähle in der Auswahl *New Folder from Template...* aus (Video 0:05) 
+
+3. Es öffnet sich ein Popup-Fenster, in dem wir die präferierte Programmierplattform wählen können. Wir wählen hier *R Project* und bestätigen (Video 0:12)
+
+4. Im nächsten Popup-Fenster können wir den Projektnamen und Speicherort wählen. Außerdem können wir hier unser Projekt für Version Control mittels Git vorbereiten (Video 0:21)
+
+5. Als nächstes wählen wir die von uns genutzte R Version aus. Wir bleiben hier bei der Default Auswahl: Der vom System genutzten Version. Außerdem bestätigen wir hier, dass wir `renv` nutzen wollen, um die von uns genutzten R-Pakete direkt mit dem Projekt zu verbinden. Wenn wir zufrieden mit unserer Auswahl sind, erstellen wir das neue Projekt mittels eines Klicks auf *Create* (Video 0:41)
+
+6. Sobald wir das neu erstellte Projekt öffnen, sehen wir in der oberen rechten Ecke der IDE den Namen unseres Projekts und können damit sicher sein, dass wir unser Projekt richtig geöffnet haben. Außerdem sehen wir in der Konsole, wie `renv` für das Projekt initialisiert wird. Nach erfolgreicher Initialisierung erscheinen ein neuer Ordner (*renv/*), sowie zwei neue Dateien (*.Rprofile* und *renv.lock*) in unserem Projektordner. (Video 0:57)
+
+7. Nun bleibt uns nur noch, eine Referenz für das R-Paket `here` zu setzen. `here` hilft uns dabei, Ordner und Dateien in unserem Projekt mittels relativer Pfade zu finden. Dafur muss `here` allerdings wissen, wo die oberste Ebene unseres Projektes ist. Dafür erstellen wir eine leere Datei mit dem Namen *.here* auf der obersten Ebene unseres Projektes. Dafür können wir z.B. den *Explorer*-Tab von Positron auf der linken Seite nutzen (Video 1:12)
+
+8. Damit steht der Rohbau deines Projekts, congrats! Um dein Projekt in einer neuen Positron Session zu öffnen, kannst du in der oberen linken Ecke der IDE unter *Open* -\> *Open Folder*.
+
 :::
 
 ### Erstelle die Unterordner-Struktur
 
-TODO
+Wenn du nach Monaten Pause dein Analyseprojekt mal wieder öffnest, welchen Anblick würdest du gerne sehen? 
+
+#### Option A
+
+
