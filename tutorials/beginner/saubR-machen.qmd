@@ -1,0 +1,10 @@
+---
+title: "SaubR machen"
+author: VN
+#execute: 
+    #echo: false
+knitr: 
+    opts_chunk: 
+      prompt: true
+---
+

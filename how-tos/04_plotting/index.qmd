@@ -1,0 +1,6 @@
+---
+title: "How-To: Daten Visualisieren"
+sidebar: id-plotting
+---
+
+Hier geht es um "all things data plotting" mit einem Fokus auf `ggplot2`. Sei es das Erstellen von Standarddiagrammen, das Anpassen von Diagrammen oder das Kombinieren von verschiedenen Diagrammtypen.

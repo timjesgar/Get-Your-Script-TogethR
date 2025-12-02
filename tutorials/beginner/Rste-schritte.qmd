@@ -1,0 +1,374 @@
+---
+title: "Rste Schritte"
+author: VN
+#execute: 
+    #echo: false
+knitr: 
+    opts_chunk: 
+      prompt: true
+---
+
+Für die Aufbereitung und Analyse deiner Daten empfehlen wir *R* -- eine Programmiersprache die in der Wissenschaft weit verbreitet ist. Um den Umgang mit R zu vereinfachen, nutzen wir *RStudio*. Dabei handelt es sich um eine integrierte Entwicklungsumgebung (IDE), also sozusagen ein All-in-one-Programm für alle, die mit *R* arbeiten: Du kannst hier Code schreiben, ausführen, deine Daten anschauen und direkt schöne Plots erzeugen -- ohne ständig zwischen Programmen zu wechseln.
+
+::: callout-important
+## Installation
+
+Installiere zuerst *R*, dann *RStudio* auf deinem Computer. Die Dateien kannst du kostenlos [hier herunterladen](https://posit.co/download/rstudio-desktop/).
+:::
+
+### *RStudio* Interface
+
+<img src="resources/Rste-schritte/RStudio-screenshot.png" width="750"/>
+
+Standardmäßig ist *RStudio* in **vier Bereiche** (auch "Panes") aufgeteilt:
+
+1.  **Source (oben links)**
+    -   Hier schreibst und bearbeitest du deine Skripte oder Quarto-/RMarkdown-Dokumente. Du kannst deinen Code hier speichern und später erneut ausführen.
+2.  **Console (unten links)**
+    -   In diesem Bereich wird der Code tatsächlich ausgeführt. Du kannst hier auch direkt Befehle eingeben und die Ergebnisse sofort sehen.
+3.  **Environment / History (oben rechts)**
+    -   Environment zeigt dir alle Objekte (z. B. Daten, Funktionen, Variablen), die aktuell im Arbeitsspeicher liegen.
+    -   History listet alle bisherigen Befehle auf, die du ausgeführt hast.
+4.  **Files / Plots / Packages / Help / Viewer (unten rechts)**
+    -   Dieser Bereich enthält mehrere Reiter:
+        -   Files: zeigt Dateien und Ordner im aktuellen Projektordner.
+        -   Plots: zeigt Grafiken, die du mit R erzeugst.
+        -   Packages: zeigt installierte R-Pakete an und ermöglicht deren Verwaltung.
+        -   Help: zeigt Hilfeseiten zu Funktionen und Paketen.
+        -   Viewer: zeigt z. B. interaktive HTML-Outputs aus Quarto an.
+
+Du kannst die Anordnung der Fenster bei Bedarf unter Tools \> Global Options \> Pane Layout anpassen.
+
+::: {.callout-tip collapse="true"}
+## Designoptionen
+
+Standardmäßig ist das Theme von *RStudio* hell. 
+Wenn dir das zu langweilig ist, kannst du das Programm ganz einfach an deinen Geschmack anpassen: 
+Unter Tools \> Global Options \> Appearance hast du die Möglichkeit, ein anderes Farbschema oder eine neue Schriftart auszuwählen.
+
+Für besonders ansprechende Symbole -- etwa den Zuweisungspfeil "\<-" -- empfiehlt sich die Schriftart Fira Code. 
+Sie sorgt für eine übersichtlichere Darstellung und unterstützt sogenannte Ligaturen. 
+Dafür ist eine [vorherige Installation](https://fonts.google.com/specimen/Fira+Code) notwendig.
+:::
+
+### Befehle und Skripte
+
+Code kannst du zwar auch direkt in der Konsole schreiben und ausführen, allerdings wird dieser dort nicht nach der Sitzung erhalten. 
+Um dein Vorgehen für dich und andere replizierbar zu machen, empfiehlt es sich mit Skripten zu arbeiten. 
+Bei einem Skript handelt es sich um eine Datei, in der du Code schreiben und diesen direkt ausführen kannst. 
+Um ein neues Skript zu erstellen, wähle im Menü File \> New File \> R Script oder klicke alternativ auf das Blatt mit dem Plussymbol links oben und wähle dort "R Script" aus.
+
+Das leere Skript kannst du jetzt mit deinem Code füllen. Probier es doch gleich mal aus und schreibe eine einfache Rechnung in dein Skript:
+
+```{r}
+#| prompt: true
+
+1 + 1
+```
+
+Den Code kannst du jetzt direkt ausführen, indem du in die zugehörige Zeile klickst und {{< kbd win=Strg+Enter mac=Cmd+Return >}} drückst. 
+Der ausgeführte Code und das Ergebnis erscheinen dann unten in der Konsole. Du kannst auch mehrere Befehle ausführen, indem du die Codezeilen markierst und dann {{< kbd win=Strg+Enter mac=Cmd+Return >}} drückst. 
+Du hast außerdem die Möglichkeit, oben rechts im Source-Pane mit einem Mausklick den markierten Code auszuführen. 
+Wenn du dein gesamtes Skript auf einmal ausführen möchtest, geht das ganz einfach über {{< kbd Strg+Shift+Enter mac=Cmd+Shift+Return >}}.
+
+### Zuweisung von Objekten
+In R arbeitet man fast immer mit Objekten – das sind „Behälter“, in denen Werte, Vektoren, Dataframes oder ganze Modelle gespeichert werden können.
+Damit man diese später weiterverwenden kann, muss man sie einem Namen zuweisen.
+Dafür verwendet man den Zuweisungsoperator `<-` :
+
+```{r}
+x <- 8
+ich_bin_ein_objekt <- "Objekt"
+```
+
+Im Environment sieht man jetzt auch die erstellten Objekte: 
+
+<img src="resources/Rste-schritte/RStudio_environment.png" width="750"/>
+
+
+::: {.callout-tip collapse="false"}
+## 
+Damit du nicht immer < und - einzeln tippen musst, kannst du den Shortcut {{< kbd win=Alt+- mac=Option+- >}} zum Einfügen des Zuweisungsoperators nutzen. 
+:::
+
+Objektnamen müssen immer mit einem Buchstaben beginnen und dürfen nur Buchstaben, Zahlen, _ und . enthalten. 
+Außerdem empfehlen wir, dich für ein einheitliches Benennungsschema zu entscheiden (z.B. snake_case oder CamelCase). 
+
+Jetzt fragst du dich vielleicht, wofür wir solche Objekte überhaupt brauchen. 
+
+- **Wiederverwendbarkeit**: Statt Zahlen oder Daten immer neu einzutippen, ruft man einfach das Objekt auf.
+- **Lesbarkeit**: Klar benannte Objekte machen den Code verständlicher.
+- **Flexibilität**: Ändert man das Objekt an einer Stelle, kann man es überall im Skript nutzen, ohne mehrfach suchen und ersetzen zu müssen.
+- **Struktur**: Komplexe Analysen bestehen aus vielen Zwischenschritten – Objekte helfen, diese geordnet zu speichern.
+
+Um dir ein Objekt anzusehen, führe einfach seinen Namen aus. Aber Achtung: Schreibfehler haben Konsequenzen.  
+
+```{r}
+#| echo: true
+#| error: true
+Ich_bin_ein_Objekt
+ich_bin_ein_objekt
+```
+
+### Datentypen und Strukturen 
+Die für uns wichtigsten Datentypen in R sind (a) *numeric* (5, 7.8, 3462), (b) *character* ("Blume", "14", "FALSE") und (c) *logical* (TRUE oder FALSE). 
+Mit der Funktion `class()` kannst du überprüfen, welcher Datentyp ein bestimmtes Objekt ist. 
+
+```{r}
+x <- 8
+class(x)
+
+y <- "Blume"
+class(y)
+
+z <- TRUE
+class(z)
+```
+
+Neben Datentypen unterscheiden wir noch zwischen verschiedenen Datenstrukturen. 
+Die Art der Datenstruktur hängt von ihren Dimensionen sowie ihrer Heterogenität ab. 
+**Atomische Vektoren** z.B. enthalten mehrere Werte des gleichen Typs (z.B. nur numerics) und sind damit eindimensional und homogen. 
+**Listen** sind auch eindimensional, aber sie können unterschiedliche Datentypen enthalten. Eine **Matrix** ist zweidimensional (Zeilen x Spalten) und homogen.
+Bei der Auswertung deiner Daten wirst du vermutlich am meisten mit **Dataframes** zu tun haben. 
+Dataframes kannst du als Tabellen betrachten, die die Eigenschaften von Listen und Matrizen kombinieren, indem sie zweidimensional und heterogen sind. 
+D.h., unterschiedliche Spalten innerhalb des Dataframes dürfen unterschiedliche Datentypen enthalten. 
+
+|                | Homogen            | Heterogen |
+|----------------|:-------------------|:----------|
+| Eindimensional | Atomischer Vektor  | Liste     |
+| Zweidimensional| Matrix             | Dataframe |
+| n-Dimensional  | Array              |           |
+
+In R kannst du folgendermaßen die verschiedenen Datenstrukturen erstellen: 
+
+```{r}
+#| prompt: false
+# Vektor
+zahlen <- c(1, 2, 3, 4) # numeric
+woerter <- c("a", "b", "c") # character
+logisch <- c(TRUE, FALSE, TRUE) # logical
+
+# Matrix
+
+m <- matrix(1:6, nrow = 2, ncol = 3)
+
+# Liste
+
+l <- list(
+  zahlen = c(1, 2, 3),
+  text = "Hallo",
+  df = data.frame(id = 1:2, wert = c(10, 20))
+)
+
+# Dataframe
+
+df <- data.frame(
+  name = c("Anna", "Ben", "Chris"),
+  age = c(23, 25, 30),
+  student = c(TRUE, FALSE, TRUE)
+)
+```
+
+#### Faktoren 
+
+Neben atomischen Vektoren (nur ein Datentyp) gibt es auch **Faktoren** – das sind spezielle Vektoren für kategoriale Daten mit *Levels*.
+Ein Faktor sieht auf den ersten Blick aus wie ein Character-Vektor, speichert intern aber zusätzlich die Liste der erlaubten Kategorien und deren Reihenfolge.
+Daher kommt er bei der Arbeit mit psychologischen Datensätzen oft zum Einsatz.
+
+1. Ein Character-Vektor lässt sich ganz einfach als Faktor darstellen. Wie man anhand des Beispiels sieht, wird pro einzigartigem Wert ein Level erstellt:
+
+```{r} 
+#| prompt: false
+f1 <- factor(c("rot", "blau", "rot", "grün"))
+levels(f1)
+```
+
+2. Man kann auch die Reihenfolge der Levels festlegen, damit sie z.B. beim Plotten der Daten in der richtigen Reihenfolge angezeigt werden. 
+Wichtig zu beachten ist, dass es sich hierbei nicht um eine mathematische Beziehung handelt. 
+Hier sagst du nur: Wenn R die Kategorien anzeigt oder plottet, bitte in dieser Reihenfolge.
+Aber R versteht nicht, dass „niedrig < mittel < hoch“ eine Rangordnung ist (dazu unter 4. mehr).
+
+```{r}
+#| prompt: false
+f2 <- factor(
+  c("mittel", "hoch", "niedrig", "mittel"),
+  levels = c("niedrig", "mittel", "hoch")
+)
+levels(f2)
+```
+
+3. Man kann einem bestehenden Vektor auch eigene Labels zuweisen: 
+```{r}
+#| prompt: false
+codes <- c(1, 2, 1, 3)
+f3 <- factor(
+  codes,
+  levels = c(1, 2, 3),
+  labels = c("Kontrolle", "Treatment A", "Treatment B")
+)
+```
+
+4. Wenn du festlegen möchtest, dass es sich um einen geordneten Faktor handelt, kannst du das über den *ordered* Befehl machen. 
+Hier sagst du: „Das sind nicht nur Kategorien, sondern eine Rangskala.“
+R weiß jetzt: stimme nicht zu < neutral < stimme zu.
+Das erlaubt nicht nur Vergleiche, sondern kommt auch bei statistischen Verfahren zum Einsatz (z. B. ordinale Regression).
+
+```{r}
+#| prompt: false
+likert <- factor(
+  c("stimme zu", "neutral", "stimme nicht zu"),
+  levels = c("stimme nicht zu", "neutral", "stimme zu"),
+  ordered = TRUE
+)
+
+likert[1] < likert[3]
+```
+
+5. Ebenfalls wichtig für statistische Modelle ist die Referenzkategorie, die sich wie folgt setzen bzw. ändern lässt: 
+
+```{r}
+#| prompt: false
+gruppe <- factor(c("Kontrolle", "A", "B"))
+gruppe <- relevel(gruppe, ref = "Kontrolle")
+``` 
+
+### Funktionen 
+In R erledigt man fast alles mit Funktionen. 
+Eine Funktion nimmt Eingaben (sogenannte **Argumente**) entgegen, führt Berechnungen aus und gibt ein Ergebnis zurück.
+
+Die allgemeine Schreibweise lautet:
+
+```{r}
+#| eval: false
+funktion(argument1 = wert1, argument2 = wert2, ...)
+```
+
+- Der Funktionsname steht vorne.
+- In den runden Klammern werden die Argumente angegeben.
+
+::: {.callout-tip collapse="false"}
+## Hinweis
+Viele Funktionen haben Standardwerte, sodass man nicht alle Argumente zwingend angeben muss.
+:::
+
+#### Beispiele 
+R verfügt über eine Vielzahl von Funktionen, die sich anwenden lassen. Mit ihnen kann man beispielsweise schnell den Mittelwert, die Summe oder die Länge eines Vektors bestimmen: 
+
+```{r}
+#| prompt: false
+# Mittelwert berechnen
+zahlen <- c(1, 2, 3, 4, 5)
+mean(zahlen)
+
+# Summe
+sum(zahlen)
+
+# Länge eines Vektors
+length(zahlen)
+
+```
+
+#### R Documentation
+Falls du dir unsicher bist, wie eine Funktion genau funktioniert oder welche Argumente sie erwartet, kannst du die integrierte Hilfe in R nutzen: 
+
+```{r}
+#| eval: false
+#| prompt: false
+?mean
+help(mean) # alternativ
+```
+
+Alternativ kannst du auch rechts unten in RStudio über das *Help*-Fenster nach der Funktion suchen. 
+
+<img src="resources/Rste-schritte/help-RStudio.png" width="750"/>
+
+Wenn du nicht genau weißt, wie eine Funktion heißt, kannst du nach Stichworten suchen: 
+
+```{r}
+#| eval: false
+#| prompt: false
+??median
+```
+
+### Pakete 
+
+R verfügt vom Punkt der Installation aus bereits über eine Vielzahl an Funktionen. 
+Da es sich um eine Programmiersprache handelt, stehen online aber auch zusätzliche **Pakete** kostenlos zur Verfügung, die *Base R* um Funktionen für spezifische Anwendungen oder quality-of-life Verbesserungen erweitern. 
+Neue Pakete müssen vor der Nutzung einmal installiert und dann bei jedem Neustart von R geladen werden. 
+Dafür stehen glücklicherweise passende Funktionen zur Verfügung. 
+
+Probier das doch gleich mal aus, indem du das Paket *tidyverse* installierst. 
+
+```{r}
+#| prompt: false
+#| eval: false
+
+# einmalig installieren
+install.packages("tidyverse")
+
+# jedes Mal laden, wenn du es nutzen möchtest
+library(tidyverse)
+```
+
+::: {.callout-tip collapse="true"}
+## Das tidyverse
+Das tidyverse ist eine Sammlung von R-Paketen, die für Datenanalyse und Datenvisualisierung entwickelt wurden.
+Alle Pakete im tidyverse folgen gemeinsamen Designprinzipien und einer einheitlichen Syntax, sodass sie gut zusammenarbeiten.
+
+Mit dem tidyverse kannst du deine Daten:
+
+- importieren (z. B. readr für CSV-Dateien),
+- aufräumen (z. B. tidyr für fehlende Werte oder Umformungen),
+- bearbeiten (z. B. dplyr für Filter, Gruppierungen, Berechnungen),
+- visualisieren (z. B. ggplot2 für Plots). 
+:::
+
+Wir empfehlen, die innerhalb deines R-Skriptes verwendeten Pakete auch immer dort zu laden. 
+So musst du beim nächsten mal nur den Code ausführen und bekommst keine Fehlermeldungen wegen fehlender Funktionen. 
+
+### Arbeitsverzeichnis 
+
+Das Arbeitsverzeichnis ist der Ordner, in dem R standardmäßig nach Dateien sucht und in dem neue Dateien gespeichert werden.
+Wenn du z. B. eine CSV-Datei einliest, ohne den vollständigen Pfad anzugeben, sucht R sie im aktuellen Arbeitsverzeichnis.
+
+Du kannst das aktuelle Arbeitsverzeichnis mit folgendem Befehl herausfinden:
+
+```{r}
+#| prompt: false
+#| eval: false
+getwd()
+```
+
+Um es zu ändern, kannst du den Pfad manuell setzen:
+
+```{r}
+#| prompt: false
+#| eval: false
+setwd("C:/Users/DeinName/Projektordner")
+```
+
+**Achtung**: Das manuelle Setzen des Arbeitsverzeichnisses ist fehleranfällig, wenn du Dateien oder Ordner verschiebst oder wenn andere deinen Code ausführen wollen.
+
+#### Besser: R Projects
+
+Eine deutlich bessere Lösung ist es, mit RStudio Projects zu arbeiten.
+Ein Project ist im Prinzip ein Ordner, den RStudio als Arbeitsumgebung behandelt.
+Wenn du ein Project öffnest, wird das Arbeitsverzeichnis automatisch auf den Projektordner gesetzt.
+
+Damit musst du dich nicht mehr mit setwd() herumärgern, und dein Code bleibt reproduzierbar – auch für andere.
+
+Wir erklären dir die Arbeit mit Projects [hier](/tutorials/advanced/reproducible_projects.qmd) genauer.
+
+### Was du bisher gelernt hast
+
+Nach diesem Kapitel solltest du:
+
+- wissen, dass R eine Programmiersprache ist und RStudio eine benutzerfreundliche Arbeitsumgebung (IDE),
+- das Interface von RStudio mit seinen vier Bereichen (Source, Console, Environment/History, Files/Plots/Packages/Help/Viewer) kennen,
+- verstehen, warum es sinnvoll ist, mit Skripten statt nur in der Konsole zu arbeiten,
+- Objekte erstellen und zuweisen können (mit `<-`),
+- die wichtigsten Datentypen unterscheiden (numeric, character, logical, factor),
+- die grundlegenden Datenstrukturen in R benennen und einfache Beispiele erstellen können (Vektor, Liste, Matrix, Dataframe),
+- wissen, wie man Funktionen aufruft, Argumente übergibt und die Hilfefunktion nutzt,
+- verstanden haben, wie man Pakete installiert und lädt (z. B. das tidyverse),
+- den Unterschied zwischen Arbeitsverzeichnis und R Projects kennen – und dass wir für reproduzierbare Analysen Projects empfehlen.

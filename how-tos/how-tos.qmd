@@ -1,6 +1,0 @@
----
-title: "How-Tos"
----
-
-Manche Programmierprobleme tauchen immer wieder in der Aufbereitung und Auswertung von wissenschaftlichen Daten auf, benötigen aber teilweise so spezifisches Wissen, dass man sich jedes Mal aus neue dazu einlesen muss.
-Damit die nächste Pattern Extraction aus Strings oder parallele Berechnung von mehreren Modellen smoother verläuft, gibt es hier eine Sammlung aus nützlichen How-Tos zu Programmierproblemen denen wir immer wieder begegnen. 

@@ -1,0 +1,20 @@
+---
+title: "Für EinsteigR"
+author: VN
+---
+
+**Die Abschlussarbeit steht an – und du hast sogar schon alle Daten gesammelt?**\
+Glückwunsch, du bist schon weiter als viele andere. Jetzt fehlt ja „nur noch“ die Auswertung. Klingt erstmal nach einem Klick in SPSS oder Excel – aber wer schon einmal versucht hat, echte Studiendaten auszuwerten, weiß: Der schwierigste Teil kommt oft **vor** der Statistik.
+
+**Datenaufbereitung, R-Skripte, Formatprobleme, Datentypen und Co.** – was nach einer wilden Mischung aus Zauberspruch und Fehlermeldung klingt, ist in Wirklichkeit gut machbar. Vorausgesetzt, man hat den richtigen Einstieg.
+
+Genau den findest du hier.
+
+In dieser Tutorial-Reihe begleiten wir dich Schritt für Schritt durch die wichtigsten Grundlagen, um deine Daten in den Griff zu bekommen – mit **R**, einer kostenlosen Programmiersprache, die besonders in der Forschung mittlerweile Standard ist.
+
+Was dich erwartet:
+
+-   *R Basics* – Was ist R eigentlich? Wie funktioniert RStudio? Und warum ist ein Pfeil plötzlich ein Zuweisungsoperator?
+-   *Daten aufräumen wie Marie Kondo* – Von wildem Datenchaos zur sauberen Tabelle: Importieren, Filtern, Umkodieren, Zusammenführen.
+-   *Der Weg zur Analyse* – Sobald deine Daten bereit sind, wird der statistische Teil plötzlich viel einfacher. Wirklich.
+

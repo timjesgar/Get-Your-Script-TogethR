@@ -1,39 +1,78 @@
 project:
   type: website
   output-dir: docs
+  execute-dir: project
 
 website:
   title: "Get Your Script TogethR!"
   navbar:
     left:
-      - href: index.qmd
-        text: HOME
+      # - text: HOME ## Brauchen wir eine HOME? Is identisch mit klicken auf Logo
+      #   href: index.qmd
         
       - text: TUTORIALS
-        href: tutorials/fuer-einsteigr.qmd
+        href: tutorials/index.qmd
 
       - text: HOW-TOS
-        href: how-tos/how-tos.qmd
+        href: how-tos/index.qmd
 
-      - text: REPRODUCIBLE PROJECTS
-        href: reproducible-projects/reproducible_projects.qmd
+      - text: SPOTLIGHTS
+        href: spotlights/index.qmd
 
-      - text: ABOUT
-        href: about.qmd
+      # - text: ABOUT ## Brauchen wir ein ABOUT?
+      #   href: about.qmd
 
   sidebar: 
-    - title: How-Tos
+  # HOW TOS -----------------
+    - title: HOW-TOS
       style: floating
+      search: true
       contents: 
-        - how-tos/how-tos.qmd
-        - how-tos/how-to_functional-programming.qmd
-    
+        - text: "How Tos"
+          href: how-tos/index.qmd
+        - section: "Einlesen und Speichern"
+          href: how-tos/01_read_and_save/index.qmd
+          contents:
+            - how-tos/01_read_and_save/tst.qmd
+        - section: "Aufbereiten"
+          href: how-tos/02_data_wrangling/index.qmd
+          contents:
+            - how-tos/02_data_wrangling/tst.qmd
+        - section: "Analysieren"
+          href: how-tos/03_analysis/index.qmd
+          contents:
+            - how-tos/03_analysis/tst.qmd
+        - section: "Visualisieren"
+          href: how-tos/04_plotting/index.qmd
+          contents:
+            - how-tos/04_plotting/tst.qmd
+
+  # TUTORIALS -----------------
     - title: Tutorials
       style: floating
+      search: true
       contents: 
-        - tutorials/fuer-einsteigr.qmd
-        - tutorials/Rste-schritte.qmd
-        - tutorials/saubR-machen.qmd
+        - text: "Tutorials"
+          href: tutorials/index.qmd
+        - section: "Reinführung in R"
+          href: tutorials/beginner/index.qmda
+          contents:
+            - tutorials/beginner/fuer-einsteigr.qmd
+            - tutorials/beginner/Rste-schritte.qmd
+            - tutorials/beginner/saubR-machen.qmd
+        - section: "Fortgeschrittene Themen"
+          href: tutorials/advanced/index.qmd
+          contents:
+            - tutorials/advanced/reproducible_projects.qmd
+    
+
+  # SPOTLIGHTS -----------------
+    - title: Spotlights
+      style: floating
+      search: true
+      contents: 
+        - text: "Spotlights"
+          href: spotlights/index.qmd
 
 format:
   html:

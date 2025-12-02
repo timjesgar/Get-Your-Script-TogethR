@@ -1,0 +1,14 @@
+---
+title: "How-Tos"
+---
+
+Manche Programmierprobleme tauchen beim Arbeiten mit wissenschaftlichen Daten immer wieder auf, benötigen aber teilweise so spezifisches Wissen, dass man sich jedes Mal aufs Neue dazu einlesen muss.
+Damit die nächste Pattern Extraction aus Strings oder parallele Berechnung von mehreren Modellen smoother verläuft, gibt es hier eine Sammlung aus nützlichen How-Tos zu Programmierproblemen denen wir immer wieder begegnen. 
+Unterteilt sind diese How-Tos dabei in verschiedene Kategorien, die sich an den typischen Arbeitsschritten in der Datenanalyse orientieren:
+
+- Das Einlesen und Speichern von Daten
+- Das Aufbereiten von Daten
+- Die Analyse von Daten
+- Die Visualisierung von Daten
+
+Klickt euch gerne durch die verschiedenen How-Tos und schaut, ob etwas für eure aktuelle Arbeit hilfreich sein könnte!
