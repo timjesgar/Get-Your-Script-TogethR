@@ -1,5 +1,6 @@
 ---
 title: "How-To: Daten Aufbereiten"
+listing: true
 ---
 
 Hier geht es um "all things data wrangling". Sei es das Bereinigen von Daten, das Transformieren von Daten oder das Kombinieren von verschiedenen Datenquellen.

@@ -1,5 +1,12 @@
 ---
 title: "How-Tos"
+listing: 
+    sort: false
+    contents: 
+        - "01_read_and_save/index.qmd"
+        - "02_data_wrangling/index.qmd"
+        - "03_analysis/index.qmd"
+        - "04_plotting/index.qmd"
 ---
 
 Manche Programmierprobleme tauchen beim Arbeiten mit wissenschaftlichen Daten immer wieder auf, benötigen aber teilweise so spezifisches Wissen, dass man sich jedes Mal aufs Neue dazu einlesen muss.

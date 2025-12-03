@@ -5,6 +5,7 @@ project:
 
 website:
   title: "Get Your Script TogethR!"
+  
   navbar:
     left:
       # - text: HOME ## Brauchen wir eine HOME? Is identisch mit klicken auf Logo
@@ -27,6 +28,7 @@ website:
     - title: HOW-TOS
       style: floating
       search: true
+      collapse-level: 1
       contents: 
         - text: "How Tos"
           href: content/how-tos/index.qmd
@@ -79,7 +81,6 @@ format:
     theme:
       - minty
       - custom.scss
-
     toc: true
     lang: de-DE
     link-external-icon: true

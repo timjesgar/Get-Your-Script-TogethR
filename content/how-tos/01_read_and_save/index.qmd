@@ -1,5 +1,6 @@
 ---
 title: "How-To: Daten einlesen und speichern"
+listing: true
 ---
 
 Hier geht es um "all things data I/O". Sei es das Einlesen von eigenwilligen Dateiformaten, das Speichern von Zwischenergebnissen oder das Teilen von großen Datensätzen. 

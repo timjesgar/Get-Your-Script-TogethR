@@ -1,5 +1,6 @@
 ---
 title: "Tutorials: Einführung in R"
+listing: true
 ---
 
 Du bist neu in R und möchtest die Grundlagen lernen? Dann bist du hier genau richtig! In diesen Tutorials führen wir dich Schritt für Schritt durch die wichtigsten Konzepte und Funktionen von R, damit du schnell und effektiv mit deinen Daten arbeiten kannst.

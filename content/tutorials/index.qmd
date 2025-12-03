@@ -1,5 +1,7 @@
 ---
 title: "Tutorials"
+listing: 
+    contents: "*/index.qmd"
 ---
 
 Willkommen zu unseren Tutorials! Hier findest du eine Sammlung von Anleitungen und Beispielen, die dir helfen, deine Fähigkeiten in R zu verbessern. Egal, ob du Anfänger bist oder bereits Erfahrung hast, wir haben etwas für dich. Viel Spaß beim Lernen und Entdecken neuer Möglichkeiten mit R!

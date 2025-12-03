@@ -1,5 +1,6 @@
 ---
 title: "How-Tos: Daten Analysieren"
+listing: true
 ---
 
 Hier geht es um "all things data analysis". Sei es das Anwenden von statistischen Modellen, das Testen von Vorannahmen oder das Berechnen von Metriken.
