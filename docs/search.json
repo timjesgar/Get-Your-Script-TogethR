@@ -18,14 +18,14 @@
     "href": "index.html",
     "title": "Get Your Script TogethR!",
     "section": "",
-    "text": "Sammlung an Tutorials und How-Tos um die Irrungen und Wirrungen der Aufbereitung und Auswertung psych. wissenschaftlicher Daten zu meistern."
+    "text": "Sammlung an Tutorials und How-Tos um die Irrungen und Wirrungen der Aufbereitung und Auswertung psych. wissenschaftlicher Daten zu meistern.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTutorials\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow-Tos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpotlights\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer"
   },
   {
     "objectID": "content/tutorials/beginner/index.html",
     "href": "content/tutorials/beginner/index.html",
     "title": "Tutorials: Einführung in R",
     "section": "",
-    "text": "Du bist neu in R und möchtest die Grundlagen lernen? Dann bist du hier genau richtig! In diesen Tutorials führen wir dich Schritt für Schritt durch die wichtigsten Konzepte und Funktionen von R, damit du schnell und effektiv mit deinen Daten arbeiten kannst."
+    "text": "Du bist neu in R und möchtest die Grundlagen lernen? Dann bist du hier genau richtig! In diesen Tutorials führen wir dich Schritt für Schritt durch die wichtigsten Konzepte und Funktionen von R, damit du schnell und effektiv mit deinen Daten arbeiten kannst.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFür EinsteigR\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\nRste Schritte\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\nSaubR machen\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\nKeine Treffer"
   },
   {
     "objectID": "content/tutorials/advanced/reproducible_projects.html",
@@ -128,7 +128,7 @@
     "href": "content/spotlights/index.html",
     "title": "Spotlights",
     "section": "",
-    "text": "Manchmal braucht’s neue Werkzeuge, um bestimmte Herausforderungen zu meistern. In unseren Spotlights stellen wir solche Werkzeuge vor – sei es ein neues Paket, eine innovative Methode oder eine praktische Funktion. Diese Spotlights sind dazu gedacht, euch inspirierende Einblicke zu geben und euch zu zeigen, wie ihr eure Datenanalyse- und Visualisierungsfähigkeiten erweitern könnt.\nDu willst selbst einen Spotlight Post schreiben? Super! Das Template für die Quarto-Datei findest du hier: Spotlight Template",
+    "text": "Manchmal braucht’s neue Werkzeuge, um bestimmte Herausforderungen zu meistern. In unseren Spotlights stellen wir solche Werkzeuge vor – sei es ein neues Paket, eine innovative Methode oder eine praktische Funktion. Diese Spotlights sind dazu gedacht, euch inspirierende Einblicke zu geben und euch zu zeigen, wie ihr eure Datenanalyse- und Visualisierungsfähigkeiten erweitern könnt.\nDu willst selbst einen Spotlight Post schreiben? Super! Das Template für die Quarto-Datei findest du hier: Spotlight Template\n\n\n\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "SPOTLIGHTS",
       "Spotlights"
@@ -182,7 +182,7 @@
     "href": "content/how-tos/01_read_and_save/index.html",
     "title": "How-To: Daten einlesen und speichern",
     "section": "",
-    "text": "Hier geht es um “all things data I/O”. Sei es das Einlesen von eigenwilligen Dateiformaten, das Speichern von Zwischenergebnissen oder das Teilen von großen Datensätzen.",
+    "text": "Hier geht es um “all things data I/O”. Sei es das Einlesen von eigenwilligen Dateiformaten, das Speichern von Zwischenergebnissen oder das Teilen von großen Datensätzen.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntestoooo\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "HOW-TOS",
       "Einlesen und Speichern"
@@ -212,7 +212,7 @@
     "href": "content/how-tos/02_data_wrangling/index.html",
     "title": "How-To: Daten Aufbereiten",
     "section": "",
-    "text": "Hier geht es um “all things data wrangling”. Sei es das Bereinigen von Daten, das Transformieren von Daten oder das Kombinieren von verschiedenen Datenquellen.",
+    "text": "Hier geht es um “all things data wrangling”. Sei es das Bereinigen von Daten, das Transformieren von Daten oder das Kombinieren von verschiedenen Datenquellen.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow-To: Functional Programming\n\n\n\n\n\n\n\n\nTLJ\n\n\n\n\n\n\n\n\n\n\n\n\ntestoooo\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "HOW-TOS",
       "Aufbereiten"
@@ -223,7 +223,7 @@
     "href": "content/how-tos/03_analysis/index.html",
     "title": "How-Tos: Daten Analysieren",
     "section": "",
-    "text": "Hier geht es um “all things data analysis”. Sei es das Anwenden von statistischen Modellen, das Testen von Vorannahmen oder das Berechnen von Metriken.",
+    "text": "Hier geht es um “all things data analysis”. Sei es das Anwenden von statistischen Modellen, das Testen von Vorannahmen oder das Berechnen von Metriken.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntestoooo\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "HOW-TOS",
       "Analysieren"
@@ -234,7 +234,7 @@
     "href": "content/how-tos/04_plotting/index.html",
     "title": "How-To: Daten Visualisieren",
     "section": "",
-    "text": "Hier geht es um “all things data plotting” mit einem Fokus auf ggplot2. Sei es das Erstellen von Standarddiagrammen, das Anpassen von Diagrammen oder das Kombinieren von verschiedenen Diagrammtypen.",
+    "text": "Hier geht es um “all things data plotting” mit einem Fokus auf ggplot2. Sei es das Erstellen von Standarddiagrammen, das Anpassen von Diagrammen oder das Kombinieren von verschiedenen Diagrammtypen.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntestoooo\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "HOW-TOS",
       "Visualisieren"
@@ -245,7 +245,7 @@
     "href": "content/how-tos/index.html",
     "title": "How-Tos",
     "section": "",
-    "text": "Manche Programmierprobleme tauchen beim Arbeiten mit wissenschaftlichen Daten immer wieder auf, benötigen aber teilweise so spezifisches Wissen, dass man sich jedes Mal aufs Neue dazu einlesen muss. Damit die nächste Pattern Extraction aus Strings oder parallele Berechnung von mehreren Modellen smoother verläuft, gibt es hier eine Sammlung aus nützlichen How-Tos zu Programmierproblemen denen wir immer wieder begegnen. Unterteilt sind diese How-Tos dabei in verschiedene Kategorien, die sich an den typischen Arbeitsschritten in der Datenanalyse orientieren:\n\nDas Einlesen und Speichern von Daten\nDas Aufbereiten von Daten\nDie Analyse von Daten\nDie Visualisierung von Daten\n\nKlickt euch gerne durch die verschiedenen How-Tos und schaut, ob etwas für eure aktuelle Arbeit hilfreich sein könnte!\nDu willst selbst einen How-To Post schreiben? Super! Das Template für die Quarto-Datei findest du hier: How-To Template",
+    "text": "Manche Programmierprobleme tauchen beim Arbeiten mit wissenschaftlichen Daten immer wieder auf, benötigen aber teilweise so spezifisches Wissen, dass man sich jedes Mal aufs Neue dazu einlesen muss. Damit die nächste Pattern Extraction aus Strings oder parallele Berechnung von mehreren Modellen smoother verläuft, gibt es hier eine Sammlung aus nützlichen How-Tos zu Programmierproblemen denen wir immer wieder begegnen. Unterteilt sind diese How-Tos dabei in verschiedene Kategorien, die sich an den typischen Arbeitsschritten in der Datenanalyse orientieren:\n\nDas Einlesen und Speichern von Daten\nDas Aufbereiten von Daten\nDie Analyse von Daten\nDie Visualisierung von Daten\n\nKlickt euch gerne durch die verschiedenen How-Tos und schaut, ob etwas für eure aktuelle Arbeit hilfreich sein könnte!\nDu willst selbst einen How-To Post schreiben? Super! Das Template für die Quarto-Datei findest du hier: How-To Template\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow-To: Daten einlesen und speichern\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow-To: Daten Aufbereiten\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow-Tos: Daten Analysieren\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow-To: Daten Visualisieren\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "HOW-TOS",
       "How Tos"
@@ -291,7 +291,7 @@
     "href": "content/tutorials/index.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Willkommen zu unseren Tutorials! Hier findest du eine Sammlung von Anleitungen und Beispielen, die dir helfen, deine Fähigkeiten in R zu verbessern. Egal, ob du Anfänger bist oder bereits Erfahrung hast, wir haben etwas für dich. Viel Spaß beim Lernen und Entdecken neuer Möglichkeiten mit R!",
+    "text": "Willkommen zu unseren Tutorials! Hier findest du eine Sammlung von Anleitungen und Beispielen, die dir helfen, deine Fähigkeiten in R zu verbessern. Egal, ob du Anfänger bist oder bereits Erfahrung hast, wir haben etwas für dich. Viel Spaß beim Lernen und Entdecken neuer Möglichkeiten mit R!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTutorials: Einführung in R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTutorials: Fortgeschrittene Themen\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "TUTORIALS",
       "Tutorials"
