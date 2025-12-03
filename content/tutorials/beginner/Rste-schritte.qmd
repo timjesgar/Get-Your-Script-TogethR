@@ -18,7 +18,7 @@ Installiere zuerst *R*, dann *RStudio* auf deinem Computer. Die Dateien kannst d
 
 ### *RStudio* Interface
 
-<img src="resources/Rste-schritte/RStudio-screenshot.png" width="750"/>
+<img src="/resources/tutorials/Rste-schritte/RStudio-screenshot.png" width="750"/>
 
 Standardmäßig ist *RStudio* in **vier Bereiche** (auch "Panes") aufgeteilt:
 
@@ -83,7 +83,7 @@ ich_bin_ein_objekt <- "Objekt"
 
 Im Environment sieht man jetzt auch die erstellten Objekte: 
 
-<img src="resources/Rste-schritte/RStudio_environment.png" width="750"/>
+<img src="/resources/tutorials/Rste-schritte/RStudio_environment.png" width="750"/>
 
 
 ::: {.callout-tip collapse="false"}
@@ -280,7 +280,7 @@ help(mean) # alternativ
 
 Alternativ kannst du auch rechts unten in RStudio über das *Help*-Fenster nach der Funktion suchen. 
 
-<img src="resources/Rste-schritte/help-RStudio.png" width="750"/>
+<img src="/resources/tutorials/Rste-schritte/help-RStudio.png" width="750"/>
 
 Wenn du nicht genau weißt, wie eine Funktion heißt, kannst du nach Stichworten suchen: 
 
@@ -357,7 +357,7 @@ Wenn du ein Project öffnest, wird das Arbeitsverzeichnis automatisch auf den Pr
 
 Damit musst du dich nicht mehr mit setwd() herumärgern, und dein Code bleibt reproduzierbar – auch für andere.
 
-Wir erklären dir die Arbeit mit Projects [hier](/tutorials/advanced/reproducible_projects.qmd) genauer.
+Wir erklären dir die Arbeit mit Projects [hier](/content/tutorials/advanced/reproducible_projects.qmd) genauer.
 
 ### Was du bisher gelernt hast
 

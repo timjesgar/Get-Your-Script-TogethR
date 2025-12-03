@@ -62,7 +62,7 @@ Hier also das Vorgehen für zwei der bekanntesten IDEs für das Arbeiten mit R:
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Projekt-Setup mit Positron
-{{< video resources/reproducible_projects/create-project_positron.mp4 >}}
+{{< video /resources/tutorials/reproducible_projects/create-project_positron.mp4 >}}
 
 1. Öffne Positron 
 
