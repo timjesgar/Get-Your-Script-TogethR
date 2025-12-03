@@ -12,3 +12,5 @@ Unterteilt sind diese How-Tos dabei in verschiedene Kategorien, die sich an den 
 - Die Visualisierung von Daten
 
 Klickt euch gerne durch die verschiedenen How-Tos und schaut, ob etwas für eure aktuelle Arbeit hilfreich sein könnte!
+
+Du willst selbst einen How-To Post schreiben? Super! Das Template für die Quarto-Datei findest du hier: [How-To Template](/resources/templates/template_post_howto.qmd)

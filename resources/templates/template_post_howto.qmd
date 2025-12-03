@@ -1,0 +1,47 @@
+---
+title: "YOUR POST TITLE"
+author: "YOUR NAME"
+toc: true
+code-annotations: below
+code-tools:
+    source: true
+    toggle: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+# fmt: skip file
+```
+
+## Das Problem
+
+<!-- Beschreibe hier kurz das Problem, das du mit dem How To lösen möchtest -->
+
+## Die Lösung (tl;dr)
+
+<!-- Füge hier einen minimalen Code samt Erklärung ein, der genutzt werden kann um das Problem zu lösen. Für die Beschreibung des Codes bietet sich Code Highlighting an, welches hier dargestellt wird. -->
+
+```{r}
+#| eval: false
+
+library(NEEDED_PACKAGE) # <1>
+
+your_data |> # <2>
+  NEEDED_FUNCTION( # <3>
+    ARGUMENT1, # <3>
+    ARGUMENT2 # <3>
+  ) |> # <3>
+  ANOTHER_NEEDED_FUNCTION(ARGUMENTS) # <4>
+```
+
+1. Beschreibe z.B. welche Pakete benötigt werden.
+2. Du kannst einzelne Schritte im Code kommentieren, indem du die Zeile mit `# <NUM>` versiehst und die Erklärung darunter einfügst. *NUM* muss dabei der Nummerierung in der Aufzählung entsprechen.
+3. Du kannst auch mehrzeiligen Code kommentieren, indem du die Zeilen mit der gleichen Nummer versiehst.
+4. So kannst du Schritt fur Schritt erklären, was der Code macht.
+
+
+## Im Detail
+
+<!-- Im diesem Abschnitt kannst ganz frei mehr Details zu deinem How To geben. Du kannst z.B. ein detaillierten Ablauf an einem Beispiel skizzieren oder Modifikationen des Codes für spezifische Use Cases vorstellen. -->

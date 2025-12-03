@@ -1,0 +1,20 @@
+---
+title: "YOUR POST TITLE"
+author: "YOUR NAME"
+toc: true
+
+code-tools:
+    source: true
+    toggle: false
+---
+
+<!-- Spotlights sind dafür da, neue oder interessante Werkzeuge, z.B. R Pakete, vorzustellen und deren Nutzen darzustellen. Es geht dabei jedocht nicht um eine detaillierte Dokumentation. Der hier skizzierte Aufbau ist dabei nur ein Vorschlag. Es sollte jedoch immer Links geben, die zu weiterführenden Informationsquellen führen, wie z.B. der Dokumentation-Website -->
+
+## Worum geht es?
+
+## Wofür kann man es nutzen?
+
+## Wo finde ich mehr Informationen?
+
+- Offizielle Dokumentation: [Dargestellter Text](DIE_URL_ZUR_DOKUMENTATION)
+
