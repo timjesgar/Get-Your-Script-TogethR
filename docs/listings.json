@@ -10,10 +10,8 @@
   {
     "listing": "/content/tutorials/beginner/index.html",
     "items": [
-      "/content/tutorials/beginner/fuer-einsteigr.html",
       "/content/tutorials/beginner/Rste-schritte.html",
-      "/content/tutorials/beginner/saubR-machen.html",
-      "/content/tutorials/beginner/DateivRkehr.html"
+      "/content/tutorials/beginner/saubR-machen.html"
     ]
   },
   {
@@ -23,24 +21,15 @@
     ]
   },
   {
-    "listing": "/content/how-tos/index.html",
+    "listing": "/content/spotlights/index.html",
     "items": [
-      "/content/how-tos/01_read_and_save/index.html",
-      "/content/how-tos/02_data_wrangling/index.html",
-      "/content/how-tos/03_analysis/index.html",
-      "/content/how-tos/04_plotting/index.html"
+      "/content/spotlights/stringr.html"
     ]
   },
   {
-    "listing": "/content/how-tos/04_plotting/index.html",
+    "listing": "/content/how-tos/01_read_and_save/index.html",
     "items": [
-      "/content/how-tos/04_plotting/tst.html"
-    ]
-  },
-  {
-    "listing": "/content/how-tos/03_analysis/index.html",
-    "items": [
-      "/content/how-tos/03_analysis/tst.html"
+      "/content/how-tos/01_read_and_save/read_multiple_files.html"
     ]
   },
   {
@@ -51,14 +40,25 @@
     ]
   },
   {
-    "listing": "/content/how-tos/01_read_and_save/index.html",
+    "listing": "/content/how-tos/03_analysis/index.html",
     "items": [
-      "/content/how-tos/01_read_and_save/tst.html"
+      "/content/how-tos/03_analysis/tst.html"
     ]
   },
   {
-    "listing": "/content/spotlights/index.html",
-    "items": []
+    "listing": "/content/how-tos/04_plotting/index.html",
+    "items": [
+      "/content/how-tos/04_plotting/tst.html"
+    ]
+  },
+  {
+    "listing": "/content/how-tos/index.html",
+    "items": [
+      "/content/how-tos/01_read_and_save/index.html",
+      "/content/how-tos/02_data_wrangling/index.html",
+      "/content/how-tos/03_analysis/index.html",
+      "/content/how-tos/04_plotting/index.html"
+    ]
   },
   {
     "listing": "/content/tutorials/index.html",

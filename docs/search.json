@@ -23,9 +23,9 @@
   {
     "objectID": "content/tutorials/beginner/index.html",
     "href": "content/tutorials/beginner/index.html",
-    "title": "Tutorials: Einführung in R",
+    "title": "Für EinsteigR",
     "section": "",
-    "text": "Du bist neu in R und möchtest die Grundlagen lernen? Dann bist du hier genau richtig! In diesen Tutorials führen wir dich Schritt für Schritt durch die wichtigsten Konzepte und Funktionen von R, damit du schnell und effektiv mit deinen Daten arbeiten kannst.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFür EinsteigR\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\nRste Schritte\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\nSaubR machen\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
+    "text": "Die Abschlussarbeit steht an – und du hast sogar schon alle Daten gesammelt?\nGlückwunsch, du bist schon weiter als viele andere. Jetzt fehlt ja „nur noch“ die Auswertung. Klingt erstmal nach einem Klick in SPSS oder Excel – aber wer schon einmal versucht hat, echte Studiendaten auszuwerten, weiß: Der schwierigste Teil kommt oft vor der Statistik.\nDatenaufbereitung, R-Skripte, Formatprobleme, Datentypen und Co. – was nach einer wilden Mischung aus Zauberspruch und Fehlermeldung klingt, ist in Wirklichkeit gut machbar. Vorausgesetzt, man hat den richtigen Einstieg.\nGenau den findest du hier.\nIn dieser Tutorial-Reihe begleiten wir dich Schritt für Schritt durch die wichtigsten Grundlagen, um deine Daten in den Griff zu bekommen – mit R, einer kostenlosen Programmiersprache, die besonders in der Forschung mittlerweile Standard ist.\nWas dich erwartet:\n\nR Basics – Was ist R eigentlich? Wie funktioniert RStudio? Und warum ist ein Pfeil plötzlich ein Zuweisungsoperator?\nDaten aufräumen wie Marie Kondo – Von wildem Datenchaos zur sauberen Tabelle: Importieren, Filtern, Umkodieren, Zusammenführen.\nDer Weg zur Analyse – Sobald deine Daten bereit sind, wird der statistische Teil plötzlich viel einfacher. Wirklich.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRste Schritte\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\nSaubR machen\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "TUTORIALS",
       "Reinführung in R"
@@ -43,6 +43,159 @@
     ]
   },
   {
+    "objectID": "content/spotlights/index.html",
+    "href": "content/spotlights/index.html",
+    "title": "Spotlights",
+    "section": "",
+    "text": "Manchmal braucht’s neue Werkzeuge, um bestimmte Herausforderungen zu meistern. In unseren Spotlights stellen wir solche Werkzeuge vor – sei es ein neues Paket, eine innovative Methode oder eine praktische Funktion. Diese Spotlights sind dazu gedacht, euch inspirierende Einblicke zu geben und euch zu zeigen, wie ihr eure Datenanalyse- und Visualisierungsfähigkeiten erweitern könnt.\nDu willst selbst einen Spotlight Post schreiben? Super! Das Template für die Quarto-Datei findest du hier: Spotlight Template\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstringr für das Arbeiten mit Textdaten\n\n\n\n\n\n\n\n\nTLJ\n\n\n\n\n\nKeine Treffer",
+    "crumbs": [
+      "SPOTLIGHTS",
+      "Spotlights"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/04_plotting/tst.html",
+    "href": "content/how-tos/04_plotting/tst.html",
+    "title": "TBC",
+    "section": "",
+    "text": "TBC",
+    "crumbs": [
+      "HOW-TOS",
+      "Visualisieren",
+      "TBC"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/03_analysis/tst.html",
+    "href": "content/how-tos/03_analysis/tst.html",
+    "title": "TBC",
+    "section": "",
+    "text": "TBC",
+    "crumbs": [
+      "HOW-TOS",
+      "Analysieren",
+      "TBC"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/02_data_wrangling/tst.html",
+    "href": "content/how-tos/02_data_wrangling/tst.html",
+    "title": "TBC",
+    "section": "",
+    "text": "TBC",
+    "crumbs": [
+      "HOW-TOS",
+      "Aufbereiten",
+      "TBC"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/02_data_wrangling/how-to_functional-programming.html",
+    "href": "content/how-tos/02_data_wrangling/how-to_functional-programming.html",
+    "title": "How-To: Functional Programming",
+    "section": "",
+    "text": "Incentive\n\n\ntl;dr\n\nyour_list |&gt;\n  set_names() |&gt;\n  map(\\(list_entry) {\n    # your code\n  })\n\n\n\nIn detail"
+  },
+  {
+    "objectID": "content/how-tos/01_read_and_save/index.html",
+    "href": "content/how-tos/01_read_and_save/index.html",
+    "title": "How-To: Daten einlesen und speichern",
+    "section": "",
+    "text": "Hier geht es um “all things data I/O”. Sei es das Einlesen von eigenwilligen Dateiformaten, das Speichern von Zwischenergebnissen oder das Teilen von großen Datensätzen.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMehrere Datensätze gemeinsam einlesen\n\n\n\n\n\n\n\n\nTLJ\n\n\n\n\n\nKeine Treffer",
+    "crumbs": [
+      "HOW-TOS",
+      "Einlesen und Speichern"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "content/how-tos/01_read_and_save/read_multiple_files.html",
+    "href": "content/how-tos/01_read_and_save/read_multiple_files.html",
+    "title": "Mehrere Datensätze gemeinsam einlesen",
+    "section": "",
+    "text": "Gerade wenn man Experimente mit vielen Teilnehmenden durchführt passiert es immer wieder, dass man viele einzelne Datensätze mit identischem Aufbau hat, die man gemeinsam auswerten möchte. Jede Datei einzeln einzulesen wird dabei sehr schnell umständlich wenn die Stichprobe groß ist. Wie kann man also viele Dateien mit identischem Aufbau effizient einlesen und zu einem Datensatz zusammenfügen?",
+    "crumbs": [
+      "HOW-TOS",
+      "Einlesen und Speichern",
+      "Mehrere Datensätze gemeinsam einlesen"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/01_read_and_save/read_multiple_files.html#das-problem",
+    "href": "content/how-tos/01_read_and_save/read_multiple_files.html#das-problem",
+    "title": "Mehrere Datensätze gemeinsam einlesen",
+    "section": "",
+    "text": "Gerade wenn man Experimente mit vielen Teilnehmenden durchführt passiert es immer wieder, dass man viele einzelne Datensätze mit identischem Aufbau hat, die man gemeinsam auswerten möchte. Jede Datei einzeln einzulesen wird dabei sehr schnell umständlich wenn die Stichprobe groß ist. Wie kann man also viele Dateien mit identischem Aufbau effizient einlesen und zu einem Datensatz zusammenfügen?",
+    "crumbs": [
+      "HOW-TOS",
+      "Einlesen und Speichern",
+      "Mehrere Datensätze gemeinsam einlesen"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/01_read_and_save/read_multiple_files.html#die-lösung-tldr",
+    "href": "content/how-tos/01_read_and_save/read_multiple_files.html#die-lösung-tldr",
+    "title": "Mehrere Datensätze gemeinsam einlesen",
+    "section": "Die Lösung (tl;dr)",
+    "text": "Die Lösung (tl;dr)\n\n1library(readr)\n\n2list.files(\n3  path = 'path/to/your/files',\n4  pattern = \"*.csv\",\n5  full.names = TRUE,\n6  recursive = TRUE\n) |&gt;\n7  read_csv()\n\n\n1\n\nAktiviere das readr Paket, um die Funktions read_csv() nutzen zu können.\n\n2\n\nMittels list.files() kannst du alle Dateien in einem Verzeichnis auflisten.\n\n3\n\npath = gibt den Pfad zu dem Verzeichnis an, in dem sich die Dateien befinden.\n\n4\n\npattern = erlaubt es dir, spezifische Dateien zu filtern, hier z.B. alle Dateien mit der Endung .csv. Der Asterisk * fungiert dabei als Wildcard und steht für beliebige Zeichen.\n\n5\n\nfull.names = TRUE sorgt dafür, dass die kompletten Pfade der Dateien zurückgegeben werden, was für das Einlesen wichtig ist.\n\n6\n\nOptional: Falls du deine Daten in Unterordnern organisiert hast, kannst du mit recursive = TRUE auch diese durchsuchen lassen.\n\n7\n\nWenn read_csv() auf eine Liste von Dateipfaden angewendet wird, werden alle Dateien eingelesen und automatisch zu einem einzigen Datensatz zusammengefügt.\n\n\n\n\nWICHTIG: Dieses Vorgehen funktioniert nur, wenn alle CSV-Datein den exakt gleichen Aufbau haben, also die gleichen Spalten in der gleichen Reihenfolge enthalten. Andernfalls kann es zu Fehlern oder unerwarteten Ergebnissen kommen.",
+    "crumbs": [
+      "HOW-TOS",
+      "Einlesen und Speichern",
+      "Mehrere Datensätze gemeinsam einlesen"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/01_read_and_save/read_multiple_files.html#im-detail",
+    "href": "content/how-tos/01_read_and_save/read_multiple_files.html#im-detail",
+    "title": "Mehrere Datensätze gemeinsam einlesen",
+    "section": "Im Detail",
+    "text": "Im Detail\nTBC",
+    "crumbs": [
+      "HOW-TOS",
+      "Einlesen und Speichern",
+      "Mehrere Datensätze gemeinsam einlesen"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/02_data_wrangling/index.html",
+    "href": "content/how-tos/02_data_wrangling/index.html",
+    "title": "How-To: Daten Aufbereiten",
+    "section": "",
+    "text": "Hier geht es um “all things data wrangling”. Sei es das Bereinigen von Daten, das Transformieren von Daten oder das Kombinieren von verschiedenen Datenquellen.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow-To: Functional Programming\n\n\n\n\n\n\n\n\nTLJ\n\n\n\n\n\n\n\n\n\n\n\n\nTBC\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
+    "crumbs": [
+      "HOW-TOS",
+      "Aufbereiten"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/03_analysis/index.html",
+    "href": "content/how-tos/03_analysis/index.html",
+    "title": "How-Tos: Daten Analysieren",
+    "section": "",
+    "text": "Hier geht es um “all things data analysis”. Sei es das Anwenden von statistischen Modellen, das Testen von Vorannahmen oder das Berechnen von Metriken.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTBC\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
+    "crumbs": [
+      "HOW-TOS",
+      "Analysieren"
+    ]
+  },
+  {
+    "objectID": "content/how-tos/04_plotting/index.html",
+    "href": "content/how-tos/04_plotting/index.html",
+    "title": "How-To: Daten Visualisieren",
+    "section": "",
+    "text": "Hier geht es um “all things data plotting” mit einem Fokus auf ggplot2. Sei es das Erstellen von Standarddiagrammen, das Anpassen von Diagrammen oder das Kombinieren von verschiedenen Diagrammtypen.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTBC\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
+    "crumbs": [
+      "HOW-TOS",
+      "Visualisieren"
+    ]
+  },
+  {
     "objectID": "content/how-tos/index.html",
     "href": "content/how-tos/index.html",
     "title": "How-Tos",
@@ -54,120 +207,47 @@
     ]
   },
   {
-    "objectID": "content/how-tos/04_plotting/index.html",
-    "href": "content/how-tos/04_plotting/index.html",
-    "title": "How-To: Daten Visualisieren",
+    "objectID": "content/spotlights/stringr.html",
+    "href": "content/spotlights/stringr.html",
+    "title": "stringr für das Arbeiten mit Textdaten",
     "section": "",
-    "text": "Hier geht es um “all things data plotting” mit einem Fokus auf ggplot2. Sei es das Erstellen von Standarddiagrammen, das Anpassen von Diagrammen oder das Kombinieren von verschiedenen Diagrammtypen.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntestoooo\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
-    "crumbs": [
-      "HOW-TOS",
-      "Visualisieren"
-    ]
-  },
-  {
-    "objectID": "content/how-tos/03_analysis/index.html",
-    "href": "content/how-tos/03_analysis/index.html",
-    "title": "How-Tos: Daten Analysieren",
-    "section": "",
-    "text": "Hier geht es um “all things data analysis”. Sei es das Anwenden von statistischen Modellen, das Testen von Vorannahmen oder das Berechnen von Metriken.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntestoooo\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
-    "crumbs": [
-      "HOW-TOS",
-      "Analysieren"
-    ]
-  },
-  {
-    "objectID": "content/how-tos/02_data_wrangling/index.html",
-    "href": "content/how-tos/02_data_wrangling/index.html",
-    "title": "How-To: Daten Aufbereiten",
-    "section": "",
-    "text": "Hier geht es um “all things data wrangling”. Sei es das Bereinigen von Daten, das Transformieren von Daten oder das Kombinieren von verschiedenen Datenquellen.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow-To: Functional Programming\n\n\n\n\n\n\n\n\nTLJ\n\n\n\n\n\n\n\n\n\n\n\n\ntestoooo\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
-    "crumbs": [
-      "HOW-TOS",
-      "Aufbereiten"
-    ]
-  },
-  {
-    "objectID": "content/how-tos/01_read_and_save/tst.html",
-    "href": "content/how-tos/01_read_and_save/tst.html",
-    "title": "testoooo",
-    "section": "",
-    "text": "Helllooo",
-    "crumbs": [
-      "HOW-TOS",
-      "Einlesen und Speichern",
-      "testoooo"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "content/how-tos/01_read_and_save/index.html",
-    "href": "content/how-tos/01_read_and_save/index.html",
-    "title": "How-To: Daten einlesen und speichern",
-    "section": "",
-    "text": "Hier geht es um “all things data I/O”. Sei es das Einlesen von eigenwilligen Dateiformaten, das Speichern von Zwischenergebnissen oder das Teilen von großen Datensätzen.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntestoooo\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
-    "crumbs": [
-      "HOW-TOS",
-      "Einlesen und Speichern"
-    ]
-  },
-  {
-    "objectID": "content/how-tos/02_data_wrangling/how-to_functional-programming.html",
-    "href": "content/how-tos/02_data_wrangling/how-to_functional-programming.html",
-    "title": "How-To: Functional Programming",
-    "section": "",
-    "text": "Incentive\n\n\ntl;dr\n\nyour_list |&gt;\n  set_names() |&gt;\n  map(\\(list_entry) {\n    # your code\n  })\n\n\n\nIn detail"
-  },
-  {
-    "objectID": "content/how-tos/02_data_wrangling/tst.html",
-    "href": "content/how-tos/02_data_wrangling/tst.html",
-    "title": "testoooo",
-    "section": "",
-    "text": "Helllooo",
-    "crumbs": [
-      "HOW-TOS",
-      "Aufbereiten",
-      "testoooo"
-    ]
-  },
-  {
-    "objectID": "content/how-tos/03_analysis/tst.html",
-    "href": "content/how-tos/03_analysis/tst.html",
-    "title": "testoooo",
-    "section": "",
-    "text": "Helllooo",
-    "crumbs": [
-      "HOW-TOS",
-      "Analysieren",
-      "testoooo"
-    ]
-  },
-  {
-    "objectID": "content/how-tos/04_plotting/tst.html",
-    "href": "content/how-tos/04_plotting/tst.html",
-    "title": "testoooo",
-    "section": "",
-    "text": "Helllooo",
-    "crumbs": [
-      "HOW-TOS",
-      "Visualisieren",
-      "testoooo"
-    ]
-  },
-  {
-    "objectID": "content/spotlights/index.html",
-    "href": "content/spotlights/index.html",
-    "title": "Spotlights",
-    "section": "",
-    "text": "Manchmal braucht’s neue Werkzeuge, um bestimmte Herausforderungen zu meistern. In unseren Spotlights stellen wir solche Werkzeuge vor – sei es ein neues Paket, eine innovative Methode oder eine praktische Funktion. Diese Spotlights sind dazu gedacht, euch inspirierende Einblicke zu geben und euch zu zeigen, wie ihr eure Datenanalyse- und Visualisierungsfähigkeiten erweitern könnt.\nDu willst selbst einen Spotlight Post schreiben? Super! Das Template für die Quarto-Datei findest du hier: Spotlight Template\n\n\n\n\n\n\n\n\nKeine Treffer",
+    "text": "Immer wieder ist es notwendig, dass wir wichtige Informationen als geschriebenen Text, sogenannte Strings, vorliegen haben. Sei es demographische Daten wie Abschluss, Ort und Zeit der Erhebung oder die Experimentalbedingungen in einem Experiment. Leider sind solche Textdaten oft “messy”: Inkonsistente Groß- und Kleinschreibung, Leerzeilen wo keine hingehören, unterschiedliche Schreibweisen für das gleiche Konzept (z.B. “männlich”, “Männlich”), und und und.\nDas R-Paket stringr bietet eine Vielzahl an Funktionen, um solche Textdaten zu bereinigen, zu transformieren und zu analysieren. Es ist Teil des tidyverse, einer Sammlung von R-Paketen, die für Datenwissenschaft entwickelt wurden und alle nach dem Prinzip der “Tidy Data” arbeiten. Ihr kennt sicher schon das ein oder andere Paket aus dem tidyverse, wie z.B. dplyr für die allgemeine Datenmanipulation oder ggplot2 für die Datenvisualisierung.",
     "crumbs": [
       "SPOTLIGHTS",
-      "Spotlights"
+      "stringr für das Arbeiten mit Textdaten"
+    ]
+  },
+  {
+    "objectID": "content/spotlights/stringr.html#worum-geht-es",
+    "href": "content/spotlights/stringr.html#worum-geht-es",
+    "title": "stringr für das Arbeiten mit Textdaten",
+    "section": "",
+    "text": "Immer wieder ist es notwendig, dass wir wichtige Informationen als geschriebenen Text, sogenannte Strings, vorliegen haben. Sei es demographische Daten wie Abschluss, Ort und Zeit der Erhebung oder die Experimentalbedingungen in einem Experiment. Leider sind solche Textdaten oft “messy”: Inkonsistente Groß- und Kleinschreibung, Leerzeilen wo keine hingehören, unterschiedliche Schreibweisen für das gleiche Konzept (z.B. “männlich”, “Männlich”), und und und.\nDas R-Paket stringr bietet eine Vielzahl an Funktionen, um solche Textdaten zu bereinigen, zu transformieren und zu analysieren. Es ist Teil des tidyverse, einer Sammlung von R-Paketen, die für Datenwissenschaft entwickelt wurden und alle nach dem Prinzip der “Tidy Data” arbeiten. Ihr kennt sicher schon das ein oder andere Paket aus dem tidyverse, wie z.B. dplyr für die allgemeine Datenmanipulation oder ggplot2 für die Datenvisualisierung.",
+    "crumbs": [
+      "SPOTLIGHTS",
+      "stringr für das Arbeiten mit Textdaten"
+    ]
+  },
+  {
+    "objectID": "content/spotlights/stringr.html#wofür-kann-man-es-nutzen",
+    "href": "content/spotlights/stringr.html#wofür-kann-man-es-nutzen",
+    "title": "stringr für das Arbeiten mit Textdaten",
+    "section": "Wofür kann man es nutzen?",
+    "text": "Wofür kann man es nutzen?\nstringr bietet Funktionen für eine Vielzahl von Aufgaben im Umgang mit Textdaten, darunter: das einfache Formatieren von Text, das Suchen und Ersetzen von Text, das Extrahieren von Teilstrings, das Aufteilen von Strings in mehrere Teile, das Zusammenfügen von Strings, und vieles mehr. Schaut euch gerne mal das Cheatsheet an, welches ihr auf der stringr Webseite findet, um euch einen Überblick über die verschiedenen Funktionen zu machen.\n\nBeispiel: Formatieren von Text\nNehmen wir an, wir haben sieben Personen gefragt, welchen Lieblingsfilm sie haben und die Antworten in einem Vektor gespeichert. Leider sind die Antworten jedoch sehr inkonsistent formatirert, was die weitere Analyse schwierig macht.\n\nlibrary(stringr)\n\n# Rohdaten\ntext_raw &lt;- c(\n  'Titanic',\n  'avatar',\n  'titanic',\n  'The  Godfather',\n  'AVATAR',\n  'inception ',\n  'Inception'\n)\n\n# Zählen wir wie oft jeder Film genannt wurde\ntable(text_raw)\n\ntext_raw\n        avatar         AVATAR      Inception     inception  The  Godfather \n             1              1              1              1              1 \n       titanic        Titanic \n             1              1 \n\n\nObwohl “Avatar”, “Titanic” und “Inception” je zweimal genannt wurden, sehen wir, dass die unterschiedlichen Schreibweisen dazu führen, dass sie als verschiedene Filme gezählt werden. Wir können stringr nutzen, um die Antworten zu bereinigen und zu standardisieren (und sie nebenbei auch etwas schöner zu formatieren).\n\ntext_clean &lt;-\n  text_raw |&gt;\n  str_to_title() |&gt; # Großschreibung am Anfang jedes Wortes\n  str_squish() # Leerzeichen am Anfang und Ende entfernen und zwischen Wörtern auf ein Leerzeichen reduzieren\n\ntable(text_clean)\n\ntext_clean\n       Avatar     Inception The Godfather       Titanic \n            2             2             1             2 \n\n\nUnd oh Wunder, nach der Bereinigung sehen wir, dass “Avatar”, “Titanic” und “Inception” jeweils zweimal genannt wurden!\n\n\nBeispiel: Extrahieren von Teilstrings\nNehmen wir an, wir haben eine Liste von E-Mail-Adressen und wollen nur die Domain-Namen extrahieren (also den Teil nach dem “@”-Zeichen). Dafür können wir stringr’s str_extract() Funktion zusammen mit Regular Expressions nutzen. Regular Expressions sind eine spezifische “Sprache”, mit der man Muster in Texten beschreiben kann. Ich werde hier nicht näher auf Regular Expressions eingehen, aber es gibt viele tolle Ressourcen online, um das zu lernen (siehe unten).\nNun aber zum Beispiel: Zuerst definieren wir einen Vektor mit E-Mail-Adressen.\n\n# Rohdaten\nemail_raw &lt;- c(\n  'max.mustermann@domain1.de',\n  'maxine.musterfrau@domain2.de',\n  'micah.musterperson@domain3.de'\n)\n\n# Extrahieren der Domain-Namen\nstr_extract(email_raw, \"(?&lt;=@).*(?=\\\\.de)\")\n\n[1] \"domain1\" \"domain2\" \"domain3\"\n\n\nDie Regular Expression (?&lt;=@).*(?=\\\\.de) sieht erstmal nach viel Kauderwelsch aus. Was es aber im Prinzip aussagt ist: Finde den ganzen Text (.*), der nach einem “@” ((?&lt;=@)) und vor einem “.de” ((?=\\\\.de)) steht. Mittels dieser Funktionalität können wir also gezielt Teile von Strings extrahieren, die bestimmte Muster erfüllen.\n\n\nUnd Und Und\nIhr seht, stringr ist ein mächtiges Werkzeug für die Arbeit mit Textdaten in R. Die beiden Beispiele hier sind nur ein kleiner Ausblick auf das, was mit stringr möglich ist. Falls ihr also das nächste Mal auf Textdaten trefft, die bereinigt oder analysiert werden müssen, denkt daran, dass stringr euch dabei helfen kann!",
+    "crumbs": [
+      "SPOTLIGHTS",
+      "stringr für das Arbeiten mit Textdaten"
+    ]
+  },
+  {
+    "objectID": "content/spotlights/stringr.html#wo-finde-ich-mehr-informationen",
+    "href": "content/spotlights/stringr.html#wo-finde-ich-mehr-informationen",
+    "title": "stringr für das Arbeiten mit Textdaten",
+    "section": "Wo finde ich mehr Informationen?",
+    "text": "Wo finde ich mehr Informationen?\n\nFür den allgemeinen Überblickk: Die offizielle Dokumentation\nZum Lernen wie man mit Strings (Zeichenketten) umgeht: Strings Kapitel in dem Online-Buch R for Data Science\nZum Lernen von Regular Expressions: Regex Kreuzworträtsel",
+    "crumbs": [
+      "SPOTLIGHTS",
+      "stringr für das Arbeiten mit Textdaten"
     ]
   },
   {
@@ -223,7 +303,7 @@
     "href": "content/tutorials/advanced/reproducible_projects.html#nutze-renv-für-eine-reproduzierbare-r-umgebung",
     "title": "Reproduzierbare Analyseprojekte mit R",
     "section": "Nutze renv für eine reproduzierbare R-Umgebung",
-    "text": "Nutze renv für eine reproduzierbare R-Umgebung",
+    "text": "Nutze renv für eine reproduzierbare R-Umgebung\nTBC\nOffizielle Dokumentation: renv",
     "crumbs": [
       "TUTORIALS",
       "Fortgeschrittene Themen",
@@ -235,7 +315,7 @@
     "href": "content/tutorials/advanced/reproducible_projects.html#nutze-here-für-relative-pfade",
     "title": "Reproduzierbare Analyseprojekte mit R",
     "section": "Nutze here für relative Pfade",
-    "text": "Nutze here für relative Pfade",
+    "text": "Nutze here für relative Pfade\nTBC\nOffizielle Dokumentation: here",
     "crumbs": [
       "TUTORIALS",
       "Fortgeschrittene Themen",
@@ -247,7 +327,7 @@
     "href": "content/tutorials/advanced/reproducible_projects.html#code-kommentare-sinnvoll-einsetzen",
     "title": "Reproduzierbare Analyseprojekte mit R",
     "section": "Code Kommentare sinnvoll einsetzen",
-    "text": "Code Kommentare sinnvoll einsetzen",
+    "text": "Code Kommentare sinnvoll einsetzen\nTBC",
     "crumbs": [
       "TUTORIALS",
       "Fortgeschrittene Themen",
@@ -259,23 +339,11 @@
     "href": "content/tutorials/advanced/reproducible_projects.html#lass-deinen-code-für-sich-selbst-sprechen",
     "title": "Reproduzierbare Analyseprojekte mit R",
     "section": "Lass deinen Code für sich selbst sprechen",
-    "text": "Lass deinen Code für sich selbst sprechen",
+    "text": "Lass deinen Code für sich selbst sprechen\nTBC",
     "crumbs": [
       "TUTORIALS",
       "Fortgeschrittene Themen",
       "Reproduzierbare Analyseprojekte mit R"
-    ]
-  },
-  {
-    "objectID": "content/tutorials/beginner/fuer-einsteigr.html",
-    "href": "content/tutorials/beginner/fuer-einsteigr.html",
-    "title": "Für EinsteigR",
-    "section": "",
-    "text": "Die Abschlussarbeit steht an – und du hast sogar schon alle Daten gesammelt?\nGlückwunsch, du bist schon weiter als viele andere. Jetzt fehlt ja „nur noch“ die Auswertung. Klingt erstmal nach einem Klick in SPSS oder Excel – aber wer schon einmal versucht hat, echte Studiendaten auszuwerten, weiß: Der schwierigste Teil kommt oft vor der Statistik.\nDatenaufbereitung, R-Skripte, Formatprobleme, Datentypen und Co. – was nach einer wilden Mischung aus Zauberspruch und Fehlermeldung klingt, ist in Wirklichkeit gut machbar. Vorausgesetzt, man hat den richtigen Einstieg.\nGenau den findest du hier.\nIn dieser Tutorial-Reihe begleiten wir dich Schritt für Schritt durch die wichtigsten Grundlagen, um deine Daten in den Griff zu bekommen – mit R, einer kostenlosen Programmiersprache, die besonders in der Forschung mittlerweile Standard ist.\nWas dich erwartet:\n\nR Basics – Was ist R eigentlich? Wie funktioniert RStudio? Und warum ist ein Pfeil plötzlich ein Zuweisungsoperator?\nDaten aufräumen wie Marie Kondo – Von wildem Datenchaos zur sauberen Tabelle: Importieren, Filtern, Umkodieren, Zusammenführen.\nDer Weg zur Analyse – Sobald deine Daten bereit sind, wird der statistische Teil plötzlich viel einfacher. Wirklich.",
-    "crumbs": [
-      "TUTORIALS",
-      "Reinführung in R",
-      "Für EinsteigR"
     ]
   },
   {
@@ -295,7 +363,7 @@
     "href": "content/tutorials/index.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Willkommen zu unseren Tutorials! Hier findest du eine Sammlung von Anleitungen und Beispielen, die dir helfen, deine Fähigkeiten in R zu verbessern. Egal, ob du Anfänger bist oder bereits Erfahrung hast, wir haben etwas für dich. Viel Spaß beim Lernen und Entdecken neuer Möglichkeiten mit R!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTutorials: Einführung in R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTutorials: Fortgeschrittene Themen\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
+    "text": "Willkommen zu unseren Tutorials! Hier findest du eine Sammlung von Anleitungen und Beispielen, die dir helfen, deine Fähigkeiten in R zu verbessern. Egal, ob du Anfänger bist oder bereits Erfahrung hast, wir haben etwas für dich. Viel Spaß beim Lernen und Entdecken neuer Möglichkeiten mit R!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFür EinsteigR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTutorials: Fortgeschrittene Themen\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "TUTORIALS",
       "Tutorials"

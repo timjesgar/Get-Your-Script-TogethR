@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -201,6 +201,12 @@ window.Quarto = {
  <span class="menu-text">Spotlights</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/spotlights/stringr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">stringr für das Arbeiten mit Textdaten</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -239,7 +245,28 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1764848756564" data-listing-reading-time-sort="3" data-listing-word-count-sort="585">
+<div class="thumbnail"><a href="../../content/spotlights/stringr.html" class="no-external">
 
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../content/spotlights/stringr.html" class="no-external">stringr für das Arbeiten mit Textdaten</a>
+</h3>
+<div class="delink listing-description"><a href="../../content/spotlights/stringr.html" class="no-external">
+Immer wieder ist es notwendig, dass wir wichtige Informationen als geschriebenen Text, sogenannte <strong>Strings</strong>, vorliegen haben. Sei es demographische Daten wie Abschluss, Ort…
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../content/spotlights/stringr.html" class="no-external">
+<div class="listing-author">
+TLJ
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">Keine Treffer</div>
 </div></main> <!-- /main -->
