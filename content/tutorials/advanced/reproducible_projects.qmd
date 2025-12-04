@@ -129,12 +129,23 @@ Das selbe geht übrigens auch für die Formatierung von Code, also Einrückungen
 
 ## Nutze *renv* für eine reproduzierbare R-Umgebung
 
+**TBC**
+
+Offizielle Dokumentation: [renv](https://rstudio.github.io/renv/)
+
 ## Nutze *here* für relative Pfade
 
+**TBC**
+
+Offizielle Dokumentation: [here](https://here.r-lib.org/)
 
 ## Code Kommentare sinnvoll einsetzen
 
+**TBC**
+
 ## Lass deinen Code für sich selbst sprechen
+
+**TBC**
 
 
 
