@@ -8,5 +8,7 @@ listing:
         - "content/spotlights/index.qmd"
 ---
 
+![](/resources/logo.png){fig-align="center" width=59%}
+
 Sammlung an Tutorials und How-Tos um die Irrungen und Wirrungen der Aufbereitung und Auswertung psych. wissenschaftlicher Daten zu meistern.
 

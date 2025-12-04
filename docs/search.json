@@ -25,7 +25,11 @@
     "href": "content/tutorials/beginner/index.html",
     "title": "Tutorials: Einführung in R",
     "section": "",
-    "text": "Du bist neu in R und möchtest die Grundlagen lernen? Dann bist du hier genau richtig! In diesen Tutorials führen wir dich Schritt für Schritt durch die wichtigsten Konzepte und Funktionen von R, damit du schnell und effektiv mit deinen Daten arbeiten kannst.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFür EinsteigR\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\nRste Schritte\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\nSaubR machen\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\nKeine Treffer"
+    "text": "Du bist neu in R und möchtest die Grundlagen lernen? Dann bist du hier genau richtig! In diesen Tutorials führen wir dich Schritt für Schritt durch die wichtigsten Konzepte und Funktionen von R, damit du schnell und effektiv mit deinen Daten arbeiten kannst.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFür EinsteigR\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\nRste Schritte\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\n\n\n\n\n\n\n\nSaubR machen\n\n\n\n\n\n\n\n\nVN\n\n\n\n\n\nKeine Treffer",
+    "crumbs": [
+      "TUTORIALS",
+      "Reinführung in R"
+    ]
   },
   {
     "objectID": "content/tutorials/advanced/reproducible_projects.html",
@@ -256,7 +260,7 @@
     "href": "content/tutorials/advanced/index.html",
     "title": "Tutorials: Fortgeschrittene Themen",
     "section": "",
-    "text": "Du hast bereits Erfahrung mit R und möchtest deine Kenntnisse vertiefen? In diesen Tutorials behandeln wir fortgeschrittene Themen und Techniken, die dir helfen, komplexere Datenanalysen durchzuführen und deine Programmierfähigkeiten zu erweitern.",
+    "text": "Du hast bereits Erfahrung mit R und möchtest deine Kenntnisse vertiefen? In diesen Tutorials behandeln wir fortgeschrittene Themen und Techniken, die dir helfen, komplexere Datenanalysen durchzuführen und deine Programmierfähigkeiten zu erweitern.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReproduzierbare Analyseprojekte mit R\n\n\n\n\n\n\n\n\nTLJ\n\n\n\n\n\nKeine Treffer",
     "crumbs": [
       "TUTORIALS",
       "Fortgeschrittene Themen"

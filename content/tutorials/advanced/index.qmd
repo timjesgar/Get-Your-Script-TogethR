@@ -1,5 +1,6 @@
 ---
 title: "Tutorials: Fortgeschrittene Themen"
+listing: true
 ---
 
 Du hast bereits Erfahrung mit R und möchtest deine Kenntnisse vertiefen? In diesen Tutorials behandeln wir fortgeschrittene Themen und Techniken, die dir helfen, komplexere Datenanalysen durchzuführen und deine Programmierfähigkeiten zu erweitern.

@@ -54,6 +54,12 @@
     ]
   },
   {
+    "listing": "/content/tutorials/advanced/index.html",
+    "items": [
+      "/content/tutorials/advanced/reproducible_projects.html"
+    ]
+  },
+  {
     "listing": "/content/tutorials/index.html",
     "items": [
       "/content/tutorials/beginner/index.html",

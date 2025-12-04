@@ -5,8 +5,10 @@ project:
 
 website:
   title: "Get Your Script TogethR!"
+  bread-crumbs: false
   
   navbar:
+    logo: "resources/logo.png"
     left:
       # - text: HOME ## Brauchen wir eine HOME? Is identisch mit klicken auf Logo
       #   href: index.qmd
@@ -57,7 +59,7 @@ website:
         - text: "Tutorials"
           href: content/tutorials/index.qmd
         - section: "Reinführung in R"
-          href: content/tutorials/beginner/index.qmda
+          href: content/tutorials/beginner/index.qmd
           contents:
             - content/tutorials/beginner/fuer-einsteigr.qmd
             - content/tutorials/beginner/Rste-schritte.qmd
