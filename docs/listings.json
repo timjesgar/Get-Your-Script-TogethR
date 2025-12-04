@@ -12,36 +12,14 @@
     "items": [
       "/content/tutorials/beginner/fuer-einsteigr.html",
       "/content/tutorials/beginner/Rste-schritte.html",
-      "/content/tutorials/beginner/saubR-machen.html"
+      "/content/tutorials/beginner/saubR-machen.html",
+      "/content/tutorials/beginner/DateivRkehr.html"
     ]
   },
   {
-    "listing": "/content/spotlights/index.html",
-    "items": []
-  },
-  {
-    "listing": "/content/how-tos/01_read_and_save/index.html",
+    "listing": "/content/tutorials/advanced/index.html",
     "items": [
-      "/content/how-tos/01_read_and_save/tst.html"
-    ]
-  },
-  {
-    "listing": "/content/how-tos/02_data_wrangling/index.html",
-    "items": [
-      "/content/how-tos/02_data_wrangling/how-to_functional-programming.html",
-      "/content/how-tos/02_data_wrangling/tst.html"
-    ]
-  },
-  {
-    "listing": "/content/how-tos/03_analysis/index.html",
-    "items": [
-      "/content/how-tos/03_analysis/tst.html"
-    ]
-  },
-  {
-    "listing": "/content/how-tos/04_plotting/index.html",
-    "items": [
-      "/content/how-tos/04_plotting/tst.html"
+      "/content/tutorials/advanced/reproducible_projects.html"
     ]
   },
   {
@@ -54,10 +32,33 @@
     ]
   },
   {
-    "listing": "/content/tutorials/advanced/index.html",
+    "listing": "/content/how-tos/04_plotting/index.html",
     "items": [
-      "/content/tutorials/advanced/reproducible_projects.html"
+      "/content/how-tos/04_plotting/tst.html"
     ]
+  },
+  {
+    "listing": "/content/how-tos/03_analysis/index.html",
+    "items": [
+      "/content/how-tos/03_analysis/tst.html"
+    ]
+  },
+  {
+    "listing": "/content/how-tos/02_data_wrangling/index.html",
+    "items": [
+      "/content/how-tos/02_data_wrangling/how-to_functional-programming.html",
+      "/content/how-tos/02_data_wrangling/tst.html"
+    ]
+  },
+  {
+    "listing": "/content/how-tos/01_read_and_save/index.html",
+    "items": [
+      "/content/how-tos/01_read_and_save/tst.html"
+    ]
+  },
+  {
+    "listing": "/content/spotlights/index.html",
+    "items": []
   },
   {
     "listing": "/content/tutorials/index.html",
