@@ -6,6 +6,7 @@ project:
 website:
   title: "Get Your Script TogethR!"
   bread-crumbs: false
+  favicon: "resources/logo.png"
   
   navbar:
     logo: "resources/logo.png"
