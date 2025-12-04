@@ -1,0 +1,70 @@
+---
+title: "Mehrere Datensätze gemeinsam einlesen"
+author: "TLJ"
+toc: true
+code-annotations: below
+code-tools:
+    source: true
+    toggle: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+# fmt: skip file
+# library(tidyverse)
+
+# dir_tmp <- tempdir()
+
+# tst_data <-
+#   mtcars |>
+#   as_tibble(rownames = "car")
+
+# c(1:5) |> 
+#   walk(function(x) {
+#     write_csv(
+#     tst_data |> 
+#       mutate(run = x, .before = everything()),
+#     file.path(dir_tmp, paste0("data_part_", x, ".csv"))
+#   )})
+
+
+```
+
+## Das Problem
+
+Gerade wenn man Experimente mit vielen Teilnehmenden durchführt passiert es immer wieder, dass man viele einzelne Datensätze mit identischem Aufbau hat, die man gemeinsam auswerten möchte.
+Jede Datei einzeln einzulesen wird dabei sehr schnell umständlich wenn die Stichprobe groß ist.
+Wie kann man also viele Dateien mit identischem Aufbau effizient einlesen und zu einem Datensatz zusammenfügen?
+
+## Die Lösung (tl;dr)
+
+```{r}
+#| eval: false
+
+library(readr) # <1>
+
+list.files( # <2>
+  path = 'path/to/your/files', # <3>
+  pattern = "*.csv", # <4>
+  full.names = TRUE, # <5>
+  recursive = TRUE # <6>
+) |>
+  read_csv() # <7>
+```
+
+1.  Aktiviere das `readr` Paket, um die Funktions `read_csv()` nutzen zu können.
+2.  Mittels `list.files()` kannst du alle Dateien in einem Verzeichnis auflisten.
+3.  `path =` gibt den Pfad zu dem Verzeichnis an, in dem sich die Dateien befinden.
+4.  `pattern =` erlaubt es dir, spezifische Dateien zu filtern, hier z.B. alle Dateien mit der Endung `.csv`. Der Asterisk `*` fungiert dabei als Wildcard und steht für beliebige Zeichen.
+5.  `full.names = TRUE` sorgt dafür, dass die kompletten Pfade der Dateien zurückgegeben werden, was für das Einlesen wichtig ist.
+6.  Optional: Falls du deine Daten in Unterordnern organisiert hast, kannst du mit `recursive = TRUE` auch diese durchsuchen lassen.
+7.  Wenn `read_csv()` auf eine Liste von Dateipfaden angewendet wird, werden alle Dateien eingelesen und automatisch zu einem einzigen Datensatz zusammengefügt.
+
+**WICHTIG**: Dieses Vorgehen funktioniert nur, wenn alle CSV-Datein den exakt gleichen Aufbau haben, also die gleichen Spalten in der gleichen Reihenfolge enthalten.
+Andernfalls kann es zu Fehlern oder unerwarteten Ergebnissen kommen.
+
+## Im Detail
+
+**TBC**

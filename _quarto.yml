@@ -37,7 +37,7 @@ website:
         - section: "Einlesen und Speichern"
           href: content/how-tos/01_read_and_save/index.qmd
           contents:
-            - content/how-tos/01_read_and_save/tst.qmd
+            - content/how-tos/01_read_and_save/read_multiple_files.qmd
         - section: "Aufbereiten"
           href: content/how-tos/02_data_wrangling/index.qmd
           contents:
