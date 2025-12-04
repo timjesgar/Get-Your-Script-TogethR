@@ -59,7 +59,7 @@ website:
       contents: 
         - text: "Tutorials"
           href: content/tutorials/index.qmd
-        - section: "Reinführung in R"
+        - section: "Für EinsteigR"
           href: content/tutorials/beginner/index.qmd
           contents:
             - content/tutorials/beginner/Rste-schritte.qmd
