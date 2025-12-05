@@ -12,7 +12,6 @@ comments:
     giscus: 
         repo: timjesgar/Get-Your-Script-TogethR
         repo-id: R_kgDOPYpH1g
-        reactions-enabled: true
         category: Announcements
         mapping: title
 ---
