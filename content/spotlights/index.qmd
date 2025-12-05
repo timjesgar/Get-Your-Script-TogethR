@@ -1,6 +1,13 @@
 ---
 title: "Spotlights"
 listing: true
+comments: 
+    giscus: 
+        repo: timjesgar/Get-Your-Script-TogethR
+        repo-id: R_kgDOPYpH1g
+        reactions-enabled: true
+        category: Announcements
+        mapping: title
 ---
 
 Manchmal braucht's neue Werkzeuge, um bestimmte Herausforderungen zu meistern. In unseren Spotlights stellen wir solche Werkzeuge vor – sei es ein neues Paket, eine innovative Methode oder eine praktische Funktion. Diese Spotlights sind dazu gedacht, euch inspirierende Einblicke zu geben und euch zu zeigen, wie ihr eure Datenanalyse- und Visualisierungsfähigkeiten erweitern könnt.
