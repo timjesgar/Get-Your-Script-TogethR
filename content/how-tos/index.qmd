@@ -14,6 +14,7 @@ comments:
         repo-id: R_kgDOPYpH1g
         category: Announcements
         mapping: title
+        reactions-enabled: false
 ---
 
 Manche Programmierprobleme tauchen beim Arbeiten mit wissenschaftlichen Daten immer wieder auf, benötigen aber teilweise so spezifisches Wissen, dass man sich jedes Mal aufs Neue dazu einlesen muss.

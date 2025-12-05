@@ -7,6 +7,7 @@ comments:
         repo-id: R_kgDOPYpH1g
         category: Announcements
         mapping: title
+        reactions-enabled: false
 ---
 
 Manchmal braucht's neue Werkzeuge, um bestimmte Herausforderungen zu meistern. In unseren Spotlights stellen wir solche Werkzeuge vor – sei es ein neues Paket, eine innovative Methode oder eine praktische Funktion. Diese Spotlights sind dazu gedacht, euch inspirierende Einblicke zu geben und euch zu zeigen, wie ihr eure Datenanalyse- und Visualisierungsfähigkeiten erweitern könnt.
